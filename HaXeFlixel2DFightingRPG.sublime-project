@@ -1,0 +1,25 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"name": "HaXeFlixel2DFightingRPG",
+			"path": "/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixel2DFightingRPG"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Flixel",
+			"path": "/home/notalentgeek/haxelib/flixel/4,0,0/"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Flixel Addons",
+			"path": "/home/notalentgeek/haxelib/flixel-addons/2,0,0/"
+		},
+		{
+			"follow_symlinks": true,
+			"name": "Haxe",
+			"path": "/usr/lib/haxe/std"
+		}
+	]
+}

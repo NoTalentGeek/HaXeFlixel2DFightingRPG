@@ -1,0 +1,698 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"enemy",
+				"enemyHealthMaxInt	var"
+			],
+			[
+				"enem",
+				"enemyHealthMaxInt"
+			],
+			[
+				"screen",
+				"screenFlxSprite"
+			],
+			[
+				"loo",
+				"loopLoopInt	var"
+			],
+			[
+				"Objec",
+				"ObjectVisitor	class"
+			],
+			[
+				"sele",
+				"selectedIndex	Int"
+			],
+			[
+				"player",
+				"playerHealthTextObject	var"
+			],
+			[
+				"Done",
+				"DoneResultInVoid	function"
+			],
+			[
+				"win",
+				"winSoundObject"
+			],
+			[
+				"point",
+				"pointerSpriteObject"
+			],
+			[
+				"wait",
+				"waitBool"
+			],
+			[
+				"lose",
+				"loseSoundObject"
+			],
+			[
+				"tween",
+				"TweenFinishFadeOutVoid	function"
+			],
+			[
+				"damag",
+				"damageTextObjectArray"
+			],
+			[
+				"Collection",
+				"CollectionFunction	class"
+			],
+			[
+				"test",
+				"textInputExplanationLastIndexInt	Int"
+			],
+			[
+				"eplanatio",
+				"explanationStringArray"
+			],
+			[
+				"explan",
+				"explanationStringArray"
+			],
+			[
+				"textExplanatio",
+				"textInputExplanationStructArray	Array<StructTextInput>"
+			],
+			[
+				"textInput",
+				"textInputObject"
+			],
+			[
+				"textInputExplanation",
+				"textInputExplanationStructArray	var"
+			],
+			[
+				"textInputExpla",
+				"textInputExplanationLastIndexInt"
+			],
+			[
+				"textInputExplanationStr",
+				"textInputExplanationStructArray"
+			],
+			[
+				"textinpout",
+				"textInputExplanationStructArray"
+			],
+			[
+				"MainMennu",
+				"MainMenuButtonObjectArrayAdjustYPosInt(...)	Int"
+			],
+			[
+				"ex",
+				"exitButtonObject"
+			],
+			[
+				"serial",
+				"serialEstablishedBool	var"
+			],
+			[
+				"get",
+				"getDeviceList"
+			],
+			[
+				"port",
+				"portName"
+			],
+			[
+				"Init",
+				"InitSerialConnectionVoid"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 275.0,
+		"last_filter": "sort",
+		"selected_items":
+		[
+			[
+				"sort",
+				"Sort Tabs: Menu"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sort ta",
+				"Sort Tabs: Menu"
+			],
+			[
+				"so",
+				"Sort Tabs: Menu"
+			],
+			[
+				"sor",
+				"Sort Tabs: Menu"
+			],
+			[
+				"insatll",
+				"Package Control: Install Package"
+			],
+			[
+				"sot",
+				"Sort Tabs: Menu"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/notalentgeek/Downloads/Creating A Simple HaXeFlixel Project.txt",
+		"/home/notalentgeek/Downloads/HaXeFlixel2DFighterRPG.txt",
+		"/home/notalentgeek/Downloads/(CHANGE THIS TO SHELL LATER) DisableTouchPadScript.txt",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/ObjectHUDCombat.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/GameOverState.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/StateGameOver.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/CombatHUD.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/StatePlay.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/ObjectHUD.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/ObjectPlayer.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/ObjectEnemy.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/PlayState.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/HUD.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/StateOption.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/Enemy.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/ObjectCoin.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/Coin.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/StateMenu.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/MenuState.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/Player.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/Project.xml",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/Project.xml",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/AssetPaths.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/AssetPaths.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/Reg.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/ObjectFiniteStateMachine.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/Main.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/FSM.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/Main.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/OptionsState.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source/StateOption.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/HUDCombat.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/PlayState.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/MenuState.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source/GameOverState.hx",
+		"/home/notalentgeek/Downloads/redshift-1.11/install-sh",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/Application.sh",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/Read Me.txt",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/Main.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CPPArduinoMuseumAudioGuide/CPPArduinoMuseumAudioGuide.ino",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CPPArduinoMuseumAudioGuide/VS1053Object.h",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CPPArduinoMuseumAudioGuide/ButtonObject.cpp",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CPPArduinoMuseumAudioGuide/ButtonObject.h",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CPPArduinoMuseumAudioGuide/VS1053Object.cpp",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CPPArduinoMuseumAudioGuide/RFIDReaderObject.h",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CPPArduinoMuseumAudioGuide/RFIDReaderObject.cpp",
+		"/home/notalentgeek/Downloads/result.txt",
+		"/home/notalentgeek/Downloads/HaXeExternPython/python",
+		"/home/notalentgeek/Downloads/WordnikTest.py",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/ObjectVisitor.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/UIPopupEditObjectVisitor.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/ObjectGeneratorSentence.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionTagGeneral.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionPremadeTag.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionPremade.hx",
+		"/home/notalentgeek/haxelib/haxe-linguistics/0,2,0/haxelib.json",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/ObjectTag.hx",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/ObjectMuseum.hx",
+		"/home/notalentgeek/haxelib/haxe-linguistics/0,2,0/examples/ExampleNaiveBayesClassifier.hx",
+		"/home/notalentgeek/haxelib/haxe-linguistics/0,2,0/examples/ExampleDictionary.hx",
+		"/home/notalentgeek/haxelib/haxe-linguistics/0,2,0/examples/Playground.hx",
+		"/home/notalentgeek/haxelib/haxe-linguistics/0,2,0/examples/ExampleBasicTokenizer.hx",
+		"/home/notalentgeek/haxelib/haxeui/1,8,6/haxelib.json",
+		"/home/notalentgeek/Downloads/LOLOLO.html",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/UIPopupRemoveObjectVisitor.hx",
+		"/home/notalentgeek/Downloads/webspider.py",
+		"/home/notalentgeek/Downloads/webspider.pyc",
+		"/home/notalentgeek/Downloads/LOL.html",
+		"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/HaXeFlixelTurnBasedRPG.sublime-project",
+		"/home/notalentgeek/Documents/Mikael/Programming/TurnBasedRPG/source/Coin.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/TurnBasedRPG/source/AssetPaths.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/TurnBasedRPG/source/CombatHUD.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/TurnBasedRPG/source/FSM.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/TurnBasedRPG/source/PlayState.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/TurnBasedRPG/source/OptionsState.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/ObjectTag.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/Main.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionStruct.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionPremadeTag.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionPremade.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionGlobal.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionFunction.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Assets/Layout/UIPopupAddObjectMuseum.xml",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/UIPopupAddObjectMuseum.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/UIPopupEditObjectMuseum.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/ObjectMuseum.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Assets/Layout/UIPopupEditObjectMuseum.xml",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/untitled.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/UIPopupAddObjectTag.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/UIPopupEditObjectTag.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeFlixelOpenWorldStealthGame/source/ExtendedFlxButton.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeFlixelOpenWorldStealthGame/source/PlayState.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeFlixelOpenWorldStealthGame/source/MenuState.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeFlixelOpenWorldStealthGame/source/AssetPaths.hx",
+		"/home/notalentgeek/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/JavaProcessingMuseumManager.pde",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CArduinoMuseumAudioGuide/RFIDReaderObject.h",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CArduinoMuseumAudioGuide/RFIDReaderObject.cpp",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/ObjectVisitor.hx",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/CArduinoMuseumAudioGuide/CArduinoMuseumAudioGuide.ino",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/project.xml",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/ObjectMuseum.pde",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/ButtonOpenClose.pde",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/ButtonOpenClose.pde",
+		"/home/notalentgeek/app.sh",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/app.sh",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/script.desktop",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/script.desktop.desktop",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/app.desktop",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/LALA.sh",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/JavaProcessingMuseumManager.pde",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/CArduinoMuseumAudioGuide/CArduinoMuseumAudioGuide.ino",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/CArduinoMuseumAudioGuide/RFIDReaderObject.cpp",
+		"/home/notalentgeek/Documents/Mikael/(ONGOING - 50%) Bachelor Thesis/Deliverable/DeliverableCode/JavaProcessingMuseumManager/run.txt",
+		"/home/notalentgeek/Documents/Draft Specification 2.txt",
+		"/home/notalentgeek/Documents/Draft Specification 1.txt",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/ObjectGeneratorSentence.hx",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/HaXeOpenFLMuseumManager.hxproj",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/ToDoList.txt",
+		"/home/notalentgeek/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source/CollectionTagGeneral.hx"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source",
+			"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source",
+			"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeFlixelTurnBasedRPG/source",
+			"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/HaXeOpenFLMuseumManager/Source",
+			"/home/notalentgeek/Downloads/Please Fix This Folder In Linux/Documents/Mikael/Programming/TurnBasedRPG/source",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"trace",
+			"makecho",
+			"_enemyHealthBar",
+			"_txtMessage",
+			"enemyHealthMaxInt",
+			"MakeCh",
+			"_enemyHealthBar",
+			"enemyHealthFlxBar",
+			"damageFlx",
+			"UpdatePlayerHealthIntVoid",
+			"UpdatePla",
+			"UpdateplayerHealthIntVoid",
+			"selectIndexInt",
+			"index",
+			"/3",
+			"screenFlxSprite",
+			"Enemy",
+			"new ObjectEnemy",
+			"enemyTypeInt",
+			"enemyFlxTypedGroup",
+			"trace",
+			"place",
+			"AnimationLeftRight",
+			"PlaceEntity",
+			"playerObjectPlayer",
+			"\"Back\"",
+			"clickVolumeUp",
+			"clickVolumeDown",
+			"clickClearData",
+			"clickBack",
+			"Back",
+			"pos",
+			"choiceTextObjectArray",
+			"damageTextObjectArray",
+			"playerHealthIntTextObject",
+			"enemyHealthBarObject",
+			"outcomeEnum",
+			"enemyObject",
+			"Update",
+			"onComplete",
+			"finishFadeIn",
+			"init",
+			":Void",
+			"makechoice",
+			"Damagein",
+			"playerHealth <=",
+			"playerHealthIntInt",
+			"playerHealth",
+			"random.int",
+			"done",
+			"_sprEnemy",
+			"Choice",
+			"waveFlxSprite",
+			"waveSprite",
+			"waveEffect",
+			"2",
+			"speed",
+			"velo",
+			"chance",
+			"Enemy",
+			"Wave",
+			"FlxWaveEffect",
+			"wave",
+			"moveDegreeFloatth",
+			"Enemy",
+			"ObjectCoin",
+			"Coin",
+			"AnimoveDegreeFloattion",
+			"movement",
+			"animation",
+			"moveDegreeFloat",
+			"mA",
+			"if (",
+			"virtualPadFlxVirtualPad",
+			"_down",
+			"_right",
+			"_left",
+			"_up",
+			"\"u\"",
+			"\"lr\"",
+			"\"d\"",
+			"Y",
+			"X",
+			"_sndStep",
+			"speed",
+			":Void",
+			"playerObjectPlayer",
+			"playerObject",
+			"player",
+			"passedEnemyObject",
+			"passed",
+			"passedEnemyObject",
+			"CollisionEnemyPlayer",
+			"CollisionCoinPlayer",
+			"C",
+			"seesPlayer",
+			"see",
+			"checkEnemyVision",
+			"E",
+			"P",
+			"startCombat",
+			"doneFadeOut",
+			"etype",
+			"e",
+			"outcome",
+			"playerTouchEnemy",
+			"playerTouchCoin",
+			"elapsed",
+			"if (",
+			"y",
+			"PlaceEntityVoid",
+			"x",
+			"entityData",
+			"entityName",
+			"placeEntities",
+			":Void",
+			"virtualPad",
+			"_sndCoin",
+			"_paused",
+			"_won",
+			"_ending",
+			"_combatHud",
+			"CombatHUD",
+			"_inCombat",
+			"_health",
+			"_money",
+			"HUD",
+			"_hud"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"UpdatePlayerHealthVoid",
+			"UpdatePlayerHealthIntVoid",
+			"ClickVolumeUp",
+			"ClickVolumeDown",
+			"ClickClearData",
+			"ClickBack",
+			"choiceFlxTextArray",
+			"damageFlxTextArray",
+			"playerHealthFlxText",
+			"enemyHealthFlxBar",
+			"outcomeEnumOutcome",
+			"enemyObjectEnemy",
+			"FinishFadeInVoid",
+			"",
+			"playerHealthInt",
+			"enemyObject",
+			"waveFlxEffectSprite",
+			"waveFlxWaveEffect",
+			"speedFloat",
+			"ObjectEnemy",
+			"math",
+			"ObjectEnemy",
+			"ObjectCoin",
+			"Animation",
+			"MovementVoid",
+			"moveDegreeFloat",
+			"if(",
+			"downBool",
+			"rightBool",
+			"leftBool",
+			"upBool",
+			"\"AnimationUp\"",
+			"\"AnimationLeftRight\"",
+			"\"AnimationDown\"",
+			"_yFloat",
+			"_xFloat",
+			"stepFlxSound",
+			"speedFloat",
+			"",
+			"playerObjectPlayer",
+			"passedObjectEnemy",
+			"CollisionEnemyPlayerVoid",
+			"CollisionCoinPlayerVoid",
+			"_coinObjectCoin",
+			"seePlayerBool",
+			"CheckEnemyVisionVoid",
+			"_enemyObjectEnemy",
+			"_playerObjectPlayer",
+			"StartCombatVoid",
+			"DoneFadeOutVoid",
+			"enemyTypeInt",
+			"passedEnemyObject",
+			"outcomeEnum",
+			"CollisionEnemyPlayer",
+			"CollisionCoinPlayer",
+			"_elapsedFloat",
+			"if(",
+			"yInt",
+			"xInt",
+			"_entityDataXml",
+			"_entityNameString",
+			"PlaceEntityVoid",
+			"",
+			"virtualPadFlxVirtualPad",
+			"coinFlxCoin",
+			"pauseBool",
+			"winBool",
+			"endingBool",
+			"hudObjectHUDCombat",
+			"ObjectHUDCombat",
+			"inCombatBool",
+			"healthInt",
+			"moneyInt",
+			"ObjectHUD",
+			"hudObjectHUD",
+			"enemyFlxTypedGroup",
+			"coinFlxTypedGroup",
+			"wallFlxTilemap",
+			"mapFlxOgmoLoader",
+			"playerObjectPlayer",
+			"ObjectPlayer",
+			"volumeInt",
+			"",
+			"ClickFullScreenVoid",
+			"UpdateVolumeVoid",
+			"/",
+			"saveFlxSave",
+			"fullScreenButton",
+			"backFlxButton",
+			"clearDataFlxButton",
+			"volumeUpFlxButton",
+			"volumeDownFlxButton",
+			"volumeAmountFlxText",
+			"volumeFlxText",
+			"volumeFlxBar",
+			"titleFlxText",
+			"StateOption",
+			"StateGameOver",
+			"StatePlay",
+			"StateMenu",
+			"playerPositionFlxPoint",
+			"stepFlxSound",
+			"idleVoidTimerFloat",
+			"objectFiniteStateMachine",
+			"\n    ",
+			"    ",
+			"FlxSprite",
+			"FlxSound",
+			"}\n    /*==================================================*/",
+			"/*==================================================*/",
+			"ClickMainMenuVoid",
+			"saveFlxSave",
+			"mainMenuFlxButton",
+			"titleFlxText",
+			"scoreFlxText",
+			"scoreFlxSprite",
+			"messageFlxText",
+			"mainMenuButtonFlxButton",
+			"hiScoreFlxText",
+			"ClickOptionVoid",
+			"ClickPlayVoid",
+			"exitFlxButton",
+			"/",
+			"playFlxButton",
+			"optionFlxButton",
+			"titleFlxText",
+			"saveFlxSave",
+			"startFullScreenBool"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "HaXeFlixel2DFightingRPG.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 50.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
