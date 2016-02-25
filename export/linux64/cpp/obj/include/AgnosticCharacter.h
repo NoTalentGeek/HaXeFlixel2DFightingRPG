@@ -32,16 +32,17 @@ class HXCPP_CLASS_ATTRIBUTES  AgnosticCharacter_obj : public hx::Object{
 		void __Visit(HX_VISIT_PARAMS);
 		::String __ToString() const { return HX_HCSTRING("AgnosticCharacter","\x47","\xca","\x6f","\x0d"); }
 
-		bool downButtonPressedBool;
+		Float CONST_SPEED_FLOAT;
+		Float accelerationXFloat;
+		Float accelerationYFloat;
 		::String facingString;
 		bool leftButtonPressedBool;
 		Float moveDegreeFloat;
 		bool rightButtonPressedBool;
+		Float speedXFloat;
 		::String spriteAssetPathString;
-		bool upButtonPressedBool;
 		Float xPositionFloat;
 		Float yPositionFloat;
-		Float speedFloat;
 		virtual ::AgnosticCharacter MovementObjectCharacter( );
 		Dynamic MovementObjectCharacter_dyn();
 

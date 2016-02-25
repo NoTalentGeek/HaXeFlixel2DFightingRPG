@@ -8,18 +8,20 @@ class AgnosticCharacter{
 
 
 
+    public var CONST_SPEED_FLOAT        (default, null)     :Float      = 4.0;
 
-
-    public var downButtonPressedBool    (default, default)  :Bool       = false;
+    //public var downButtonPressedBool  (default, default)  :Bool       = false;
+    //public var upButtonPressedBool    (default, default)  :Bool       = false;
+    public var accelerationXFloat       (default, default)  :Float      = 0.0;
+    public var accelerationYFloat       (null, default)     :Float      = 0.0;
     public var facingString             (default, null)     :String     = "";
     public var leftButtonPressedBool    (default, default)  :Bool       = false;
     public var moveDegreeFloat          (default, null)     :Float      = -1.0;
     public var rightButtonPressedBool   (default, default)  :Bool       = false;
+    public var speedXFloat              (default, null)     :Float      = 80.0;
     public var spriteAssetPathString    (null, default)     :String     = "";
-    public var upButtonPressedBool      (default, default)  :Bool       = false;
     public var xPositionFloat           (null, default)     :Float      = -1;
     public var yPositionFloat           (null, default)     :Float      = -1;
-    public var speedFloat               (default, default)  :Float      = 200.0;
 
 
 
@@ -34,12 +36,13 @@ class AgnosticCharacter{
     public function MovementObjectCharacter():AgnosticCharacter{
 
         if(
-            downButtonPressedBool   ||
+            //downButtonPressedBool ||
+            //upButtonPressedBool
             leftButtonPressedBool   ||
-            rightButtonPressedBool  ||
-            upButtonPressedBool
+            rightButtonPressedBool
         ){
 
+            /*
             if(downButtonPressedBool){
 
                 facingString = "DOWN";
@@ -56,16 +59,17 @@ class AgnosticCharacter{
                 else if(rightButtonPressedBool)     { moveDegreeFloat += 45; }
 
             }
-            else if(leftButtonPressedBool){
+            */
+            if(leftButtonPressedBool){
 
                 facingString = "LEFT";
-                moveDegreeFloat = 180;
+                accelerationXFloat = -1*CONST_SPEED_FLOAT*speedXFloat;
 
             }
             else if(rightButtonPressedBool){
 
                 facingString = "RIGHT";
-                moveDegreeFloat = 0;
+                accelerationXFloat = CONST_SPEED_FLOAT*speedXFloat;
 
             }
 
@@ -82,7 +86,7 @@ class AgnosticCharacter{
     /*Prevent two contradictory boolean to be active in the same time.*/
     public function PreventMovementContradictionObjectCharacter():AgnosticCharacter{
 
-        if(downButtonPressedBool    && upButtonPressedBool)     { downButtonPressedBool     = upButtonPressedBool       = false; }
+        //if(downButtonPressedBool  && upButtonPressedBool)     { downButtonPressedBool     = upButtonPressedBool       = false; }
         if(leftButtonPressedBool    && rightButtonPressedBool)  { leftButtonPressedBool     = rightButtonPressedBool    = false; }
 
         return this;

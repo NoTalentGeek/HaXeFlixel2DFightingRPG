@@ -14,12 +14,14 @@ import flixel.math.FlxPoint;
 
 
 
+/*
 typedef ChangeVariableWithDetectionStruct = {
 
     boolBool:Bool,
     sourceT:Dynamic
 
 }
+*/
 
 
 
@@ -31,6 +33,7 @@ class FlxSpriteCharacter extends FlxSprite{
 
 
 
+    /*
     public static function ChangeVariableWithDetectionDynamic<T>(_controlT:T, _sourceT:T):Dynamic{
 
         var boolBool:Bool = false;
@@ -56,6 +59,7 @@ class FlxSpriteCharacter extends FlxSprite{
         else{ return boolBool; }
 
     }
+    */
 
 
 
@@ -71,7 +75,28 @@ class FlxSpriteCharacter extends FlxSprite{
 
         super(_xPositionFloat, _yPositionFloat);
         loadGraphic(AssetPaths.spr0001__png ,false, 32, 32);
+
+        drag = new FlxPoint(
+            agnosticObjectCharacter.CONST_SPEED_FLOAT*agnosticObjectCharacter.speedXFloat,
+            agnosticObjectCharacter.CONST_SPEED_FLOAT*agnosticObjectCharacter.speedXFloat
+        );
+        maxVelocity = new FlxPoint(
+            agnosticObjectCharacter.speedXFloat,
+            agnosticObjectCharacter.speedXFloat
+        );
+
         SyncAgnosticFlxSpriteCharacter();
+
+
+
+        FlxG.log.redirectTraces = true;
+
+        FlxG.watch.add(agnosticObjectCharacter, "accelerationXFloat");
+        FlxG.watch.add(agnosticObjectCharacter, "accelerationYFloat");
+        FlxG.watch.add(this, "acceleration");
+
+        FlxG.watch.add(agnosticObjectCharacter, "leftButtonPressedBool");
+        FlxG.watch.add(agnosticObjectCharacter, "rightButtonPressedBool");
 
     }
 
@@ -86,25 +111,37 @@ class FlxSpriteCharacter extends FlxSprite{
 
 
 
-        if(agnosticObjectCharacter.facingString == "DOWN")          { facing = FlxObject.DOWN; }
-        else if(agnosticObjectCharacter.facingString == "LEFT")     { facing = FlxObject.LEFT; }
+        //if(agnosticObjectCharacter.facingString == "DOWN")        { facing = FlxObject.DOWN; }
+        //if(agnosticObjectCharacter.facingString == "UP")          { facing = FlxObject.UP; }
+        if(agnosticObjectCharacter.facingString == "LEFT")          { facing = FlxObject.LEFT; }
         else if(agnosticObjectCharacter.facingString == "RIGHT")    { facing = FlxObject.RIGHT; }
-        else if(agnosticObjectCharacter.facingString == "UP")       { facing = FlxObject.UP; }
 
         if(
-            agnosticObjectCharacter.downButtonPressedBool   ||
+            //agnosticObjectCharacter.downButtonPressedBool ||
+            //agnosticObjectCharacter.upButtonPressedBool
             agnosticObjectCharacter.leftButtonPressedBool   ||
-            agnosticObjectCharacter.rightButtonPressedBool  ||
-            agnosticObjectCharacter.upButtonPressedBool
+            agnosticObjectCharacter.rightButtonPressedBool
         ){
 
+            /*
             velocity.set(agnosticObjectCharacter.speedFloat, 0);
             velocity.rotate(FlxPoint.weak(0, 0), agnosticObjectCharacter.moveDegreeFloat);
+            */
 
+            acceleration.x = agnosticObjectCharacter.accelerationXFloat;
+
+            /*PENDING: Add current action enumeration, walking, talking, interracting, etc.*/
             trace("WALKING.");
 
         }
-        else{ velocity.set(0, 0); }
+        else{
+
+            //velocity.set(0, 0);
+            acceleration.x = 0;
+
+        }
+
+        acceleration.y = 600;
 
     }
 
@@ -114,42 +151,40 @@ class FlxSpriteCharacter extends FlxSprite{
 
     private function SyncAgnosticFlxSpriteCharacter():FlxSpriteCharacter{
 
+        /*
         /*Determine which button is pressed.
         This is just for debuggin purpose.
         These if statements are to detect whether there is a change in button pressed
-            so that it will only trigger thr trace message once.*/
+            so that it will only trigger thr trace message once.
         if(
-            ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.downButtonPressedBool,   FlxG.keys.anyPressed([DOWN, S])).boolBool   == true ||
-            ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.leftButtonPressedBool,   FlxG.keys.anyPressed([LEFT, A])).boolBool   == true ||
-            ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.rightButtonPressedBool,  FlxG.keys.anyPressed([RIGHT, D])).boolBool  == true ||
-            ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.upButtonPressedBool,     FlxG.keys.anyPressed([UP, W])).boolBool     == true
+            //ChangeVariableWithDetectionDynamic    (agnosticObjectCharacter.downButtonPressedBool,   FlxG.keys.anyPressed([DOWN, S])).boolBool   == true ||
+            //ChangeVariableWithDetectionDynamic    (agnosticObjectCharacter.upButtonPressedBool,     FlxG.keys.anyPressed([UP, W])).boolBool     == true
+            ChangeVariableWithDetectionDynamic      (agnosticObjectCharacter.leftButtonPressedBool,   FlxG.keys.anyPressed([LEFT, A])).boolBool   == true ||
+            ChangeVariableWithDetectionDynamic      (agnosticObjectCharacter.rightButtonPressedBool,  FlxG.keys.anyPressed([RIGHT, D])).boolBool  == true
         ){
 
-            agnosticObjectCharacter.downButtonPressedBool   = ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.downButtonPressedBool,     FlxG.keys.anyPressed([DOWN,     S])).sourceT;
+            //agnosticObjectCharacter.downButtonPressedBool = ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.downButtonPressedBool,     FlxG.keys.anyPressed([DOWN,     S])).sourceT;
+            //agnosticObjectCharacter.upButtonPressedBool   = ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.upButtonPressedBool,       FlxG.keys.anyPressed([UP,       W])).sourceT;
             agnosticObjectCharacter.leftButtonPressedBool   = ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.leftButtonPressedBool,     FlxG.keys.anyPressed([LEFT,     A])).sourceT;
             agnosticObjectCharacter.rightButtonPressedBool  = ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.rightButtonPressedBool,    FlxG.keys.anyPressed([RIGHT,    D])).sourceT;
-            agnosticObjectCharacter.upButtonPressedBool     = ChangeVariableWithDetectionDynamic(agnosticObjectCharacter.upButtonPressedBool,       FlxG.keys.anyPressed([UP,       W])).sourceT;
-
-            trace(
-                "\n" +
-                "DOWN   BUTTON: " + agnosticObjectCharacter.downButtonPressedBool   + ".\n" +
-                "LEFT   BUTTON: " + agnosticObjectCharacter.leftButtonPressedBool   + ".\n" +
-                "RIGHT  BUTTON: " + agnosticObjectCharacter.rightButtonPressedBool  + ".\n" +
-                "UP     BUTTON: " + agnosticObjectCharacter.upButtonPressedBool     + "."
-            );
 
         }
+        */
+
+        agnosticObjectCharacter.leftButtonPressedBool   = FlxG.keys.anyPressed([LEFT,     A]);
+        agnosticObjectCharacter.rightButtonPressedBool  = FlxG.keys.anyPressed([RIGHT,    D]);
+
+
+
+        agnosticObjectCharacter.accelerationXFloat          = acceleration.x;
+        agnosticObjectCharacter.accelerationYFloat          = acceleration.y;
+        agnosticObjectCharacter.spriteAssetPathString       = graphic.assetsKey;
+        agnosticObjectCharacter.xPositionFloat              = x;
+        agnosticObjectCharacter.yPositionFloat              = y;
 
         agnosticObjectCharacter
             .MovementObjectCharacter()
             .PreventMovementContradictionObjectCharacter();
-
-
-
-
-        agnosticObjectCharacter.spriteAssetPathString       = graphic.assetsKey;
-        agnosticObjectCharacter.xPositionFloat              = x;
-        agnosticObjectCharacter.yPositionFloat              = y;
 
 
 

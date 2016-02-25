@@ -1,0 +1,6 @@
+I am searching for inspiration of good and simple turn based game.
+The game must have a simple element of RPG, like customization and storyline.
+Let's search...
+A simple example would be Space Grunts game, however this game has no attachment or something, so I need to find better example for a game that has attachment in it.
+I mean is like attachment to character.
+The goal is to make a game like Final Fantasy Crisis core.

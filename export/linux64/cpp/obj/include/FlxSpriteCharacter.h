@@ -35,16 +35,12 @@ class HXCPP_CLASS_ATTRIBUTES  FlxSpriteCharacter_obj : public ::flixel::FlxSprit
 
 		HX_DO_RTTI_ALL;
 		Dynamic __Field(const ::String &inString, hx::PropertyAccess inCallProp);
-		static bool __GetStatic(const ::String &inString, Dynamic &outValue, hx::PropertyAccess inCallProp);
 		Dynamic __SetField(const ::String &inString,const Dynamic &inValue, hx::PropertyAccess inCallProp);
 		void __GetFields(Array< ::String> &outFields);
 		static void __register();
 		void __Mark(HX_MARK_PARAMS);
 		void __Visit(HX_VISIT_PARAMS);
 		::String __ToString() const { return HX_HCSTRING("FlxSpriteCharacter","\xb2","\xee","\x36","\x4b"); }
-
-		static Dynamic ChangeVariableWithDetectionDynamic( Dynamic _controlT,Dynamic _sourceT);
-		static Dynamic ChangeVariableWithDetectionDynamic_dyn();
 
 		::AgnosticCharacter agnosticObjectCharacter;
 		::flixel::math::FlxPoint playerPositionFlxPoint;

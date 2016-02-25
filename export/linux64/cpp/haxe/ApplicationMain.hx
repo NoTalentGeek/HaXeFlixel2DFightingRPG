@@ -511,7 +511,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "88",
+			build: "124",
 			company: "HaxeFlixel",
 			file: "HaXeFlixel2DFightingRPG",
 			fps: 60,
