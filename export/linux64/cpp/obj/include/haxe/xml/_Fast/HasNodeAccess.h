@@ -38,6 +38,9 @@ class HXCPP_CLASS_ATTRIBUTES  HasNodeAccess_obj : public hx::Object{
 		::String __ToString() const { return HX_HCSTRING("HasNodeAccess","\x20","\x89","\x3a","\x78"); }
 
 		::Xml __x;
+		virtual bool resolve( ::String name);
+		Dynamic resolve_dyn();
+
 };
 
 } // end namespace haxe

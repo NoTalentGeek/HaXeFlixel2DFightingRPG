@@ -1075,6 +1075,7 @@
    <depend name="include/haxe/xml/Parser.h"/>
   </file>
   <file name="src/haxe/xml/Fast.cpp">
+   <depend name="include/StringTools.h"/>
    <depend name="include/Xml.h"/>
    <depend name="include/haxe/xml/Fast.h"/>
    <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
@@ -1103,6 +1104,7 @@
   </file>
   <file name="src/haxe/xml/_Fast/NodeAccess.cpp">
    <depend name="include/Xml.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
    <depend name="include/haxe/xml/_Fast/NodeAccess.h"/>
   </file>
   <file name="src/haxe/io/StringInput.cpp">
@@ -4346,6 +4348,140 @@
    <depend name="include/flixel/animation/FlxBaseAnimation.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
   </file>
+  <file name="src/flixel/addons/editors/tiled/TiledTileSet.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/Xml.h"/>
+   <depend name="include/_List/ListIterator.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledImageTile.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledPropertySet.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileSet.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasNodeAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+   <depend name="include/openfl/_legacy/geom/Rectangle.h"/>
+   <depend name="include/openfl/_legacy/utils/ByteArray.h"/>
+   <depend name="include/openfl/_legacy/utils/IDataInput.h"/>
+   <depend name="include/openfl/_legacy/utils/IDataOutput.h"/>
+   <depend name="include/openfl/_legacy/utils/IMemoryRange.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledTileLayer.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayerType.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTile.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileSet.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/io/Bytes.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeAccess.h"/>
+   <depend name="include/openfl/_legacy/utils/ByteArray.h"/>
+   <depend name="include/openfl/_legacy/utils/CompressionAlgorithm.h"/>
+   <depend name="include/openfl/_legacy/utils/IDataInput.h"/>
+   <depend name="include/openfl/_legacy/utils/IDataOutput.h"/>
+   <depend name="include/openfl/_legacy/utils/IMemoryRange.h"/>
+   <depend name="include/openfl/utils/_Endian/Endian_Impl_.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledTile.cpp">
+   <depend name="include/flixel/addons/editors/tiled/TiledTile.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledPropertySet.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/_List/ListIterator.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledPropertySet.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledObjectLayer.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/_List/ListIterator.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayerType.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledObject.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledObjectLayer.h"/>
+   <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledObject.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/Xml.h"/>
+   <depend name="include/_List/ListIterator.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledObject.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledObjectLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledPropertySet.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileSet.h"/>
+   <depend name="include/flixel/math/FlxPoint.h"/>
+   <depend name="include/flixel/util/FlxPool_flixel_math_FlxPoint.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPool.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasNodeAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledLayerType.cpp">
+   <depend name="include/flixel/addons/editors/tiled/TiledLayerType.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledImageTile.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/_List/ListIterator.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledImageTile.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledImageLayer.cpp">
+   <depend name="include/Std.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledImageLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayerType.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeAccess.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledLayer.cpp">
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/_List/ListIterator.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayerType.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledPropertySet.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+  </file>
   <file name="src/flixel/FlxSubState.cpp">
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxCamera.h"/>
@@ -4855,6 +4991,63 @@
   <file name="src/ValueType.cpp">
    <depend name="include/ValueType.h"/>
   </file>
+  <file name="src/TiledMapTiledLevel.cpp">
+   <depend name="include/FlxStateMenu.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/TiledMapTiledLevel.h"/>
+   <depend name="include/flixel/FlxBasic.h"/>
+   <depend name="include/flixel/FlxCamera.h"/>
+   <depend name="include/flixel/FlxCameraFollowStyle.h"/>
+   <depend name="include/flixel/FlxG.h"/>
+   <depend name="include/flixel/FlxObject.h"/>
+   <depend name="include/flixel/FlxSprite.h"/>
+   <depend name="include/flixel/FlxState.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledImageLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledImageTile.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayerType.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledObject.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledObjectLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledPropertySet.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileSet.h"/>
+   <depend name="include/flixel/group/FlxTypedGroup.h"/>
+   <depend name="include/flixel/math/FlxPoint.h"/>
+   <depend name="include/flixel/tile/FlxBaseTilemap.h"/>
+   <depend name="include/flixel/tile/FlxTilemap.h"/>
+   <depend name="include/flixel/tile/FlxTilemapAutoTiling.h"/>
+   <depend name="include/flixel/util/IFlxDestroyable.h"/>
+   <depend name="include/flixel/util/IFlxPooled.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/Log.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/io/Path.h"/>
+  </file>
+  <file name="src/flixel/addons/editors/tiled/TiledMap.cpp">
+   <depend name="include/EReg.h"/>
+   <depend name="include/List.h"/>
+   <depend name="include/Std.h"/>
+   <depend name="include/StringTools.h"/>
+   <depend name="include/Xml.h"/>
+   <depend name="include/_List/ListIterator.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledImageLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledObjectLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledPropertySet.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileSet.h"/>
+   <depend name="include/flixel/util/_FlxColor/FlxColor_Impl_.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/haxe/xml/Fast.h"/>
+   <depend name="include/haxe/xml/_Fast/AttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/HasAttribAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeAccess.h"/>
+   <depend name="include/haxe/xml/_Fast/NodeListAccess.h"/>
+   <depend name="include/openfl/_legacy/Assets.h"/>
+  </file>
   <file name="src/StringTools.cpp">
    <depend name="include/StringTools.h"/>
   </file>
@@ -4880,10 +5073,12 @@
   <file name="src/FlxStateMenu.cpp">
    <depend name="include/FlxSpriteCharacter.h"/>
    <depend name="include/FlxStateMenu.h"/>
+   <depend name="include/TiledMapTiledLevel.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
    <depend name="include/flixel/FlxState.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
   </file>
@@ -5541,6 +5736,7 @@
    <depend name="include/flixel/graphics/tile/FlxDrawItemType.h"/>
    <depend name="include/flixel/graphics/frames/FlxFrameCollectionType.h"/>
    <depend name="include/flixel/effects/particles/FlxEmitterMode.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledLayerType.h"/>
    <depend name="include/flixel/FlxRenderMethod.h"/>
    <depend name="include/flixel/FlxCameraFollowStyle.h"/>
    <depend name="include/ValueType.h"/>
@@ -5689,6 +5885,9 @@
    <depend name="include/openfl/_legacy/display/DirectRenderer.h"/>
    <depend name="include/flixel/effects/FlxFlicker.h"/>
    <depend name="include/flixel/animation/FlxPrerotatedAnimation.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTileLayer.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledTile.h"/>
+   <depend name="include/flixel/addons/editors/tiled/TiledObject.h"/>
    <depend name="include/flixel/_FlxSprite/GraphicDefault.h"/>
    <depend name="include/flixel/FlxG.h"/>
    <depend name="include/flixel/math/FlxRandom.h"/>
@@ -5697,6 +5896,7 @@
    <depend name="include/flixel/FlxCamera.h"/>
    <depend name="include/flixel/math/FlxPoint.h"/>
    <depend name="include/Xml.h"/>
+   <depend name="include/TiledMapTiledLevel.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/math/FlxRect.h"/>
    <depend name="include/flixel/FlxBasic.h"/>

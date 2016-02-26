@@ -6,6 +6,7 @@
 #endif
 
 HX_DECLARE_CLASS0(Xml)
+HX_DECLARE_CLASS2(haxe,xml,Fast)
 HX_DECLARE_CLASS3(haxe,xml,_Fast,NodeAccess)
 namespace haxe{
 namespace xml{
@@ -38,6 +39,9 @@ class HXCPP_CLASS_ATTRIBUTES  NodeAccess_obj : public hx::Object{
 		::String __ToString() const { return HX_HCSTRING("NodeAccess","\x66","\x85","\xa4","\x0c"); }
 
 		::Xml __x;
+		virtual ::haxe::xml::Fast resolve( ::String name);
+		Dynamic resolve_dyn();
+
 };
 
 } // end namespace haxe

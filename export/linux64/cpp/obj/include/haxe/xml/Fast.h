@@ -46,6 +46,15 @@ class HXCPP_CLASS_ATTRIBUTES  Fast_obj : public hx::Object{
 		::haxe::xml::_Fast::AttribAccess att;
 		::haxe::xml::_Fast::HasAttribAccess has;
 		::haxe::xml::_Fast::HasNodeAccess hasNode;
+		virtual ::String get_name( );
+		Dynamic get_name_dyn();
+
+		virtual ::String get_innerData( );
+		Dynamic get_innerData_dyn();
+
+		virtual Dynamic get_elements( );
+		Dynamic get_elements_dyn();
+
 };
 
 } // end namespace haxe

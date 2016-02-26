@@ -159,6 +159,9 @@
 #ifndef INCLUDED_flixel_effects_particles_FlxEmitterMode
 #include <flixel/effects/particles/FlxEmitterMode.h>
 #endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledLayerType
+#include <flixel/addons/editors/tiled/TiledLayerType.h>
+#endif
 #ifndef INCLUDED_flixel_FlxRenderMethod
 #include <flixel/FlxRenderMethod.h>
 #endif
@@ -603,6 +606,15 @@
 #ifndef INCLUDED_flixel_animation_FlxPrerotatedAnimation
 #include <flixel/animation/FlxPrerotatedAnimation.h>
 #endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledTileLayer
+#include <flixel/addons/editors/tiled/TiledTileLayer.h>
+#endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledTile
+#include <flixel/addons/editors/tiled/TiledTile.h>
+#endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledObject
+#include <flixel/addons/editors/tiled/TiledObject.h>
+#endif
 #ifndef INCLUDED_flixel__FlxSprite_GraphicDefault
 #include <flixel/_FlxSprite/GraphicDefault.h>
 #endif
@@ -626,6 +638,9 @@
 #endif
 #ifndef INCLUDED_Xml
 #include <Xml.h>
+#endif
+#ifndef INCLUDED_TiledMapTiledLevel
+#include <TiledMapTiledLevel.h>
 #endif
 #ifndef INCLUDED_flixel_FlxObject
 #include <flixel/FlxObject.h>
@@ -1332,6 +1347,24 @@
 #ifndef INCLUDED_flixel_animation_FlxBaseAnimation
 #include <flixel/animation/FlxBaseAnimation.h>
 #endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledTileSet
+#include <flixel/addons/editors/tiled/TiledTileSet.h>
+#endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledPropertySet
+#include <flixel/addons/editors/tiled/TiledPropertySet.h>
+#endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledObjectLayer
+#include <flixel/addons/editors/tiled/TiledObjectLayer.h>
+#endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledImageTile
+#include <flixel/addons/editors/tiled/TiledImageTile.h>
+#endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledImageLayer
+#include <flixel/addons/editors/tiled/TiledImageLayer.h>
+#endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledLayer
+#include <flixel/addons/editors/tiled/TiledLayer.h>
+#endif
 #ifndef INCLUDED_flixel_FlxSubState
 #include <flixel/FlxSubState.h>
 #endif
@@ -1394,6 +1427,9 @@
 #endif
 #ifndef INCLUDED_Type
 #include <Type.h>
+#endif
+#ifndef INCLUDED_flixel_addons_editors_tiled_TiledMap
+#include <flixel/addons/editors/tiled/TiledMap.h>
 #endif
 #ifndef INCLUDED_StringTools
 #include <StringTools.h>
@@ -1551,6 +1587,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::graphics::tile::FlxDrawItemType_obj::__register();
 ::flixel::graphics::frames::FlxFrameCollectionType_obj::__register();
 ::flixel::effects::particles::FlxEmitterMode_obj::__register();
+::flixel::addons::editors::tiled::TiledLayerType_obj::__register();
 ::flixel::FlxRenderMethod_obj::__register();
 ::flixel::FlxCameraFollowStyle_obj::__register();
 ::ValueType_obj::__register();
@@ -1699,6 +1736,9 @@ hx::RegisterResources( hx::GetResources() );
 ::openfl::_legacy::display::DirectRenderer_obj::__register();
 ::flixel::effects::FlxFlicker_obj::__register();
 ::flixel::animation::FlxPrerotatedAnimation_obj::__register();
+::flixel::addons::editors::tiled::TiledTileLayer_obj::__register();
+::flixel::addons::editors::tiled::TiledTile_obj::__register();
+::flixel::addons::editors::tiled::TiledObject_obj::__register();
 ::flixel::_FlxSprite::GraphicDefault_obj::__register();
 ::flixel::FlxG_obj::__register();
 ::flixel::math::FlxRandom_obj::__register();
@@ -1707,6 +1747,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::FlxCamera_obj::__register();
 ::flixel::math::FlxPoint_obj::__register();
 ::Xml_obj::__register();
+::TiledMapTiledLevel_obj::__register();
 ::flixel::FlxObject_obj::__register();
 ::flixel::math::FlxRect_obj::__register();
 ::flixel::FlxBasic_obj::__register();
@@ -1942,6 +1983,12 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::animation::FlxAnimationController_obj::__register();
 ::flixel::animation::FlxAnimation_obj::__register();
 ::flixel::animation::FlxBaseAnimation_obj::__register();
+::flixel::addons::editors::tiled::TiledTileSet_obj::__register();
+::flixel::addons::editors::tiled::TiledPropertySet_obj::__register();
+::flixel::addons::editors::tiled::TiledObjectLayer_obj::__register();
+::flixel::addons::editors::tiled::TiledImageTile_obj::__register();
+::flixel::addons::editors::tiled::TiledImageLayer_obj::__register();
+::flixel::addons::editors::tiled::TiledLayer_obj::__register();
 ::flixel::FlxSubState_obj::__register();
 ::flixel::IFlxSprite_obj::__register();
 ::flixel::FlxGame_obj::__register();
@@ -1963,6 +2010,7 @@ hx::RegisterResources( hx::GetResources() );
 ::cpp::vm::Mutex_obj::__register();
 ::cpp::vm::Gc_obj::__register();
 ::Type_obj::__register();
+::flixel::addons::editors::tiled::TiledMap_obj::__register();
 ::StringTools_obj::__register();
 ::StringBuf_obj::__register();
 ::Reflect_obj::__register();
@@ -2048,6 +2096,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::graphics::tile::FlxDrawItemType_obj::__boot();
 ::flixel::graphics::frames::FlxFrameCollectionType_obj::__boot();
 ::flixel::effects::particles::FlxEmitterMode_obj::__boot();
+::flixel::addons::editors::tiled::TiledLayerType_obj::__boot();
 ::flixel::FlxRenderMethod_obj::__boot();
 ::flixel::FlxCameraFollowStyle_obj::__boot();
 ::ValueType_obj::__boot();
@@ -2075,6 +2124,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::FlxBasic_obj::__boot();
 ::flixel::math::FlxRect_obj::__boot();
 ::flixel::FlxObject_obj::__boot();
+::TiledMapTiledLevel_obj::__boot();
 ::Xml_obj::__boot();
 ::flixel::math::FlxPoint_obj::__boot();
 ::flixel::FlxCamera_obj::__boot();
@@ -2082,6 +2132,9 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::math::FlxRandom_obj::__boot();
 ::flixel::FlxG_obj::__boot();
 ::flixel::_FlxSprite::GraphicDefault_obj::__boot();
+::flixel::addons::editors::tiled::TiledObject_obj::__boot();
+::flixel::addons::editors::tiled::TiledTile_obj::__boot();
+::flixel::addons::editors::tiled::TiledTileLayer_obj::__boot();
 ::flixel::animation::FlxPrerotatedAnimation_obj::__boot();
 ::flixel::effects::FlxFlicker_obj::__boot();
 ::openfl::_legacy::display::DirectRenderer_obj::__boot();

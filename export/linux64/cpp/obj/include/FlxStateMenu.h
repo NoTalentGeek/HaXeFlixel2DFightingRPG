@@ -8,9 +8,14 @@
 #ifndef INCLUDED_flixel_FlxState
 #include <flixel/FlxState.h>
 #endif
+HX_DECLARE_CLASS0(FlxSpriteCharacter)
 HX_DECLARE_CLASS0(FlxStateMenu)
+HX_DECLARE_CLASS0(TiledMapTiledLevel)
 HX_DECLARE_CLASS1(flixel,FlxBasic)
+HX_DECLARE_CLASS1(flixel,FlxObject)
+HX_DECLARE_CLASS1(flixel,FlxSprite)
 HX_DECLARE_CLASS1(flixel,FlxState)
+HX_DECLARE_CLASS4(flixel,addons,editors,tiled,TiledMap)
 HX_DECLARE_CLASS2(flixel,group,FlxTypedGroup)
 HX_DECLARE_CLASS2(flixel,util,IFlxDestroyable)
 
@@ -32,9 +37,15 @@ class HXCPP_CLASS_ATTRIBUTES  FlxStateMenu_obj : public ::flixel::FlxState_obj{
 
 		HX_DO_RTTI_ALL;
 		Dynamic __Field(const ::String &inString, hx::PropertyAccess inCallProp);
+		Dynamic __SetField(const ::String &inString,const Dynamic &inValue, hx::PropertyAccess inCallProp);
+		void __GetFields(Array< ::String> &outFields);
 		static void __register();
+		void __Mark(HX_MARK_PARAMS);
+		void __Visit(HX_VISIT_PARAMS);
 		::String __ToString() const { return HX_HCSTRING("FlxStateMenu","\x9e","\x0d","\xe9","\x47"); }
 
+		::FlxSpriteCharacter testFlxSpriteCharacter;
+		::TiledMapTiledLevel tiledLevelTiledMap;
 		virtual Void create( );
 
 		virtual Void update( Float _elapsedFloat);

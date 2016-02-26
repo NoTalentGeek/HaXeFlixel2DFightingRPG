@@ -81,97 +81,75 @@
 
 Void FlxSpriteCharacter_obj::__construct(Float _xPositionFloat,Float _yPositionFloat)
 {
-HX_STACK_FRAME("FlxSpriteCharacter","new",0x1854d0a4,"FlxSpriteCharacter.new","FlxSpriteCharacter.hx",28,0xe11d0f4c)
+HX_STACK_FRAME("FlxSpriteCharacter","new",0x1854d0a4,"FlxSpriteCharacter.new","FlxSpriteCharacter.hx",30,0xe11d0f4c)
 HX_STACK_THIS(this)
 HX_STACK_ARG(_xPositionFloat,"_xPositionFloat")
 HX_STACK_ARG(_yPositionFloat,"_yPositionFloat")
 {
-	HX_STACK_LINE(67)
+	HX_STACK_LINE(69)
 	this->playerPositionFlxPoint = ::flixel::math::FlxPoint_obj::__new(null(),null());
-	HX_STACK_LINE(66)
+	HX_STACK_LINE(68)
 	this->agnosticObjectCharacter = ::AgnosticCharacter_obj::__new();
-	HX_STACK_LINE(74)
+	HX_STACK_LINE(76)
 	Float tmp = _xPositionFloat;		HX_STACK_VAR(tmp,"tmp");
-	HX_STACK_LINE(74)
+	HX_STACK_LINE(76)
 	Float tmp1 = _yPositionFloat;		HX_STACK_VAR(tmp1,"tmp1");
-	HX_STACK_LINE(74)
+	HX_STACK_LINE(76)
 	super::__construct(tmp,tmp1,null());
-	HX_STACK_LINE(75)
+	HX_STACK_LINE(77)
 	this->loadGraphic(HX_HCSTRING("assets/images/spr0001.png","\x26","\x4a","\x56","\xb0"),false,(int)32,(int)32,null(),null());
-	HX_STACK_LINE(78)
+	HX_STACK_LINE(80)
 	::AgnosticCharacter tmp2 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp2,"tmp2");
-	HX_STACK_LINE(78)
+	HX_STACK_LINE(80)
 	Float tmp3 = tmp2->CONST_SPEED_FLOAT;		HX_STACK_VAR(tmp3,"tmp3");
-	HX_STACK_LINE(78)
+	HX_STACK_LINE(80)
 	::AgnosticCharacter tmp4 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp4,"tmp4");
-	HX_STACK_LINE(78)
+	HX_STACK_LINE(80)
 	Float tmp5 = tmp4->speedXFloat;		HX_STACK_VAR(tmp5,"tmp5");
-	HX_STACK_LINE(78)
+	HX_STACK_LINE(80)
 	Float tmp6 = (tmp3 * tmp5);		HX_STACK_VAR(tmp6,"tmp6");
-	HX_STACK_LINE(79)
+	HX_STACK_LINE(81)
 	::AgnosticCharacter tmp7 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp7,"tmp7");
-	HX_STACK_LINE(79)
+	HX_STACK_LINE(81)
 	Float tmp8 = tmp7->CONST_SPEED_FLOAT;		HX_STACK_VAR(tmp8,"tmp8");
-	HX_STACK_LINE(79)
+	HX_STACK_LINE(81)
 	::AgnosticCharacter tmp9 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp9,"tmp9");
-	HX_STACK_LINE(79)
+	HX_STACK_LINE(81)
 	Float tmp10 = tmp9->speedXFloat;		HX_STACK_VAR(tmp10,"tmp10");
-	HX_STACK_LINE(79)
+	HX_STACK_LINE(81)
 	Float tmp11 = (tmp8 * tmp10);		HX_STACK_VAR(tmp11,"tmp11");
-	HX_STACK_LINE(77)
+	HX_STACK_LINE(79)
 	::flixel::math::FlxPoint tmp12 = ::flixel::math::FlxPoint_obj::__new(tmp6,tmp11);		HX_STACK_VAR(tmp12,"tmp12");
-	HX_STACK_LINE(77)
+	HX_STACK_LINE(79)
 	this->drag = tmp12;
-	HX_STACK_LINE(82)
+	HX_STACK_LINE(84)
 	::AgnosticCharacter tmp13 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp13,"tmp13");
-	HX_STACK_LINE(82)
+	HX_STACK_LINE(84)
 	Float tmp14 = tmp13->speedXFloat;		HX_STACK_VAR(tmp14,"tmp14");
-	HX_STACK_LINE(83)
+	HX_STACK_LINE(85)
 	::AgnosticCharacter tmp15 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp15,"tmp15");
-	HX_STACK_LINE(83)
+	HX_STACK_LINE(85)
 	Float tmp16 = tmp15->speedXFloat;		HX_STACK_VAR(tmp16,"tmp16");
-	HX_STACK_LINE(81)
+	HX_STACK_LINE(83)
 	::flixel::math::FlxPoint tmp17 = ::flixel::math::FlxPoint_obj::__new(tmp14,tmp16);		HX_STACK_VAR(tmp17,"tmp17");
-	HX_STACK_LINE(81)
+	HX_STACK_LINE(83)
 	this->maxVelocity = tmp17;
-	HX_STACK_LINE(86)
+	HX_STACK_LINE(88)
 	this->SyncAgnosticFlxSpriteCharacter();
-	HX_STACK_LINE(90)
-	{
-		HX_STACK_LINE(90)
-		::flixel::_system::frontEnds::LogFrontEnd tmp18 = ::flixel::FlxG_obj::log;		HX_STACK_VAR(tmp18,"tmp18");
-		HX_STACK_LINE(90)
-		::flixel::_system::frontEnds::LogFrontEnd _this = tmp18;		HX_STACK_VAR(_this,"_this");
-		HX_STACK_LINE(90)
-		Dynamic tmp19;		HX_STACK_VAR(tmp19,"tmp19");
-		HX_STACK_LINE(90)
-		tmp19 = _this->__Field(HX_HCSTRING("processTraceData","\xe0","\x2e","\xf4","\x70"), hx::paccDynamic );
-		HX_STACK_LINE(90)
-		::haxe::Log_obj::trace = tmp19;
-		HX_STACK_LINE(90)
-		_this->__FieldRef(HX_HCSTRING("redirectTraces","\x8a","\xce","\xd6","\x0a")) = true;
-	}
 	HX_STACK_LINE(92)
 	{
 		HX_STACK_LINE(92)
-		::flixel::FlxGame tmp18 = ::flixel::FlxG_obj::game;		HX_STACK_VAR(tmp18,"tmp18");
+		::flixel::_system::frontEnds::LogFrontEnd tmp18 = ::flixel::FlxG_obj::log;		HX_STACK_VAR(tmp18,"tmp18");
 		HX_STACK_LINE(92)
-		::flixel::_system::debug::watch::Watch tmp19 = tmp18->debugger->__Field(HX_HCSTRING("watch","\x4f","\x16","\x25","\xc5"), hx::paccDynamic );		HX_STACK_VAR(tmp19,"tmp19");
+		::flixel::_system::frontEnds::LogFrontEnd _this = tmp18;		HX_STACK_VAR(_this,"_this");
 		HX_STACK_LINE(92)
-		::AgnosticCharacter tmp20 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp20,"tmp20");
+		Dynamic tmp19;		HX_STACK_VAR(tmp19,"tmp19");
 		HX_STACK_LINE(92)
-		tmp19->__Field(HX_HCSTRING("add","\x21","\xf2","\x49","\x00"), hx::paccDynamic )(tmp20,HX_HCSTRING("accelerationXFloat","\x64","\xa6","\xaa","\x43"),null());
-	}
-	HX_STACK_LINE(93)
-	{
-		HX_STACK_LINE(93)
-		::flixel::FlxGame tmp18 = ::flixel::FlxG_obj::game;		HX_STACK_VAR(tmp18,"tmp18");
-		HX_STACK_LINE(93)
-		::flixel::_system::debug::watch::Watch tmp19 = tmp18->debugger->__Field(HX_HCSTRING("watch","\x4f","\x16","\x25","\xc5"), hx::paccDynamic );		HX_STACK_VAR(tmp19,"tmp19");
-		HX_STACK_LINE(93)
-		::AgnosticCharacter tmp20 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp20,"tmp20");
-		HX_STACK_LINE(93)
-		tmp19->__Field(HX_HCSTRING("add","\x21","\xf2","\x49","\x00"), hx::paccDynamic )(tmp20,HX_HCSTRING("accelerationYFloat","\xc3","\x02","\x06","\xaa"),null());
+		tmp19 = _this->__Field(HX_HCSTRING("processTraceData","\xe0","\x2e","\xf4","\x70"), hx::paccDynamic );
+		HX_STACK_LINE(92)
+		::haxe::Log_obj::trace = tmp19;
+		HX_STACK_LINE(92)
+		_this->__FieldRef(HX_HCSTRING("redirectTraces","\x8a","\xce","\xd6","\x0a")) = true;
 	}
 	HX_STACK_LINE(94)
 	{
@@ -180,7 +158,20 @@ HX_STACK_ARG(_yPositionFloat,"_yPositionFloat")
 		HX_STACK_LINE(94)
 		::flixel::_system::debug::watch::Watch tmp19 = tmp18->debugger->__Field(HX_HCSTRING("watch","\x4f","\x16","\x25","\xc5"), hx::paccDynamic );		HX_STACK_VAR(tmp19,"tmp19");
 		HX_STACK_LINE(94)
-		tmp19->__Field(HX_HCSTRING("add","\x21","\xf2","\x49","\x00"), hx::paccDynamic )(hx::ObjectPtr<OBJ_>(this),HX_HCSTRING("acceleration","\x40","\x00","\x61","\x9a"),null());
+		::AgnosticCharacter tmp20 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp20,"tmp20");
+		HX_STACK_LINE(94)
+		tmp19->__Field(HX_HCSTRING("add","\x21","\xf2","\x49","\x00"), hx::paccDynamic )(tmp20,HX_HCSTRING("accelerationXFloat","\x64","\xa6","\xaa","\x43"),null());
+	}
+	HX_STACK_LINE(95)
+	{
+		HX_STACK_LINE(95)
+		::flixel::FlxGame tmp18 = ::flixel::FlxG_obj::game;		HX_STACK_VAR(tmp18,"tmp18");
+		HX_STACK_LINE(95)
+		::flixel::_system::debug::watch::Watch tmp19 = tmp18->debugger->__Field(HX_HCSTRING("watch","\x4f","\x16","\x25","\xc5"), hx::paccDynamic );		HX_STACK_VAR(tmp19,"tmp19");
+		HX_STACK_LINE(95)
+		::AgnosticCharacter tmp20 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp20,"tmp20");
+		HX_STACK_LINE(95)
+		tmp19->__Field(HX_HCSTRING("add","\x21","\xf2","\x49","\x00"), hx::paccDynamic )(tmp20,HX_HCSTRING("accelerationYFloat","\xc3","\x02","\x06","\xaa"),null());
 	}
 	HX_STACK_LINE(96)
 	{
@@ -189,19 +180,28 @@ HX_STACK_ARG(_yPositionFloat,"_yPositionFloat")
 		HX_STACK_LINE(96)
 		::flixel::_system::debug::watch::Watch tmp19 = tmp18->debugger->__Field(HX_HCSTRING("watch","\x4f","\x16","\x25","\xc5"), hx::paccDynamic );		HX_STACK_VAR(tmp19,"tmp19");
 		HX_STACK_LINE(96)
+		tmp19->__Field(HX_HCSTRING("add","\x21","\xf2","\x49","\x00"), hx::paccDynamic )(hx::ObjectPtr<OBJ_>(this),HX_HCSTRING("acceleration","\x40","\x00","\x61","\x9a"),null());
+	}
+	HX_STACK_LINE(98)
+	{
+		HX_STACK_LINE(98)
+		::flixel::FlxGame tmp18 = ::flixel::FlxG_obj::game;		HX_STACK_VAR(tmp18,"tmp18");
+		HX_STACK_LINE(98)
+		::flixel::_system::debug::watch::Watch tmp19 = tmp18->debugger->__Field(HX_HCSTRING("watch","\x4f","\x16","\x25","\xc5"), hx::paccDynamic );		HX_STACK_VAR(tmp19,"tmp19");
+		HX_STACK_LINE(98)
 		::AgnosticCharacter tmp20 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp20,"tmp20");
-		HX_STACK_LINE(96)
+		HX_STACK_LINE(98)
 		tmp19->__Field(HX_HCSTRING("add","\x21","\xf2","\x49","\x00"), hx::paccDynamic )(tmp20,HX_HCSTRING("leftButtonPressedBool","\x13","\x33","\x70","\x57"),null());
 	}
-	HX_STACK_LINE(97)
+	HX_STACK_LINE(99)
 	{
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(99)
 		::flixel::FlxGame tmp18 = ::flixel::FlxG_obj::game;		HX_STACK_VAR(tmp18,"tmp18");
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(99)
 		::flixel::_system::debug::watch::Watch tmp19 = tmp18->debugger->__Field(HX_HCSTRING("watch","\x4f","\x16","\x25","\xc5"), hx::paccDynamic );		HX_STACK_VAR(tmp19,"tmp19");
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(99)
 		::AgnosticCharacter tmp20 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp20,"tmp20");
-		HX_STACK_LINE(97)
+		HX_STACK_LINE(99)
 		tmp19->__Field(HX_HCSTRING("add","\x21","\xf2","\x49","\x00"), hx::paccDynamic )(tmp20,HX_HCSTRING("rightButtonPressedBool","\x9e","\x8f","\x2e","\x04"),null());
 	}
 }
@@ -224,92 +224,84 @@ Dynamic FlxSpriteCharacter_obj::__Create(hx::DynamicArray inArgs)
 
 Void FlxSpriteCharacter_obj::update( Float _elapsedFloat){
 {
-		HX_STACK_FRAME("FlxSpriteCharacter","update",0xd2970845,"FlxSpriteCharacter.update","FlxSpriteCharacter.hx",105,0xe11d0f4c)
+		HX_STACK_FRAME("FlxSpriteCharacter","update",0xd2970845,"FlxSpriteCharacter.update","FlxSpriteCharacter.hx",107,0xe11d0f4c)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(_elapsedFloat,"_elapsedFloat")
-		HX_STACK_LINE(107)
+		HX_STACK_LINE(109)
 		Float tmp = _elapsedFloat;		HX_STACK_VAR(tmp,"tmp");
-		HX_STACK_LINE(107)
+		HX_STACK_LINE(109)
 		this->super::update(tmp);
-		HX_STACK_LINE(108)
+		HX_STACK_LINE(110)
 		this->SyncAgnosticFlxSpriteCharacter();
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(116)
 		::AgnosticCharacter tmp1 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp1,"tmp1");
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(116)
 		::String tmp2 = tmp1->facingString;		HX_STACK_VAR(tmp2,"tmp2");
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(116)
 		bool tmp3 = (tmp2 == HX_HCSTRING("LEFT","\x07","\xd0","\x70","\x32"));		HX_STACK_VAR(tmp3,"tmp3");
-		HX_STACK_LINE(114)
+		HX_STACK_LINE(116)
 		if ((tmp3)){
-			HX_STACK_LINE(114)
+			HX_STACK_LINE(116)
 			this->set_facing((int)1);
 		}
 		else{
-			HX_STACK_LINE(115)
+			HX_STACK_LINE(117)
 			::AgnosticCharacter tmp4 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp4,"tmp4");
-			HX_STACK_LINE(115)
+			HX_STACK_LINE(117)
 			::String tmp5 = tmp4->facingString;		HX_STACK_VAR(tmp5,"tmp5");
-			HX_STACK_LINE(115)
+			HX_STACK_LINE(117)
 			bool tmp6 = (tmp5 == HX_HCSTRING("RIGHT","\xbc","\x43","\x52","\x67"));		HX_STACK_VAR(tmp6,"tmp6");
-			HX_STACK_LINE(115)
+			HX_STACK_LINE(117)
 			if ((tmp6)){
-				HX_STACK_LINE(115)
+				HX_STACK_LINE(117)
 				this->set_facing((int)16);
 			}
 		}
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(122)
 		::AgnosticCharacter tmp4 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp4,"tmp4");
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(122)
 		bool tmp5 = tmp4->leftButtonPressedBool;		HX_STACK_VAR(tmp5,"tmp5");
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(122)
 		bool tmp6 = !(tmp5);		HX_STACK_VAR(tmp6,"tmp6");
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(122)
 		bool tmp7;		HX_STACK_VAR(tmp7,"tmp7");
-		HX_STACK_LINE(120)
+		HX_STACK_LINE(122)
 		if ((tmp6)){
-			HX_STACK_LINE(121)
+			HX_STACK_LINE(123)
 			::AgnosticCharacter tmp8 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp8,"tmp8");
-			HX_STACK_LINE(121)
+			HX_STACK_LINE(123)
 			::AgnosticCharacter tmp9 = tmp8;		HX_STACK_VAR(tmp9,"tmp9");
-			HX_STACK_LINE(121)
+			HX_STACK_LINE(123)
 			tmp7 = tmp9->rightButtonPressedBool;
 		}
 		else{
-			HX_STACK_LINE(120)
+			HX_STACK_LINE(122)
 			tmp7 = true;
 		}
-		HX_STACK_LINE(117)
+		HX_STACK_LINE(119)
 		if ((tmp7)){
-			HX_STACK_LINE(129)
+			HX_STACK_LINE(131)
 			::flixel::math::FlxPoint tmp8 = this->acceleration;		HX_STACK_VAR(tmp8,"tmp8");
-			HX_STACK_LINE(129)
+			HX_STACK_LINE(131)
 			::AgnosticCharacter tmp9 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp9,"tmp9");
-			HX_STACK_LINE(129)
+			HX_STACK_LINE(131)
 			Float tmp10 = tmp9->accelerationXFloat;		HX_STACK_VAR(tmp10,"tmp10");
-			HX_STACK_LINE(129)
+			HX_STACK_LINE(131)
 			tmp8->set_x(tmp10);
-			HX_STACK_LINE(131)
-			Dynamic tmp11 = hx::SourceInfo(HX_HCSTRING("FlxSpriteCharacter.hx","\x4c","\x0f","\x1d","\xe1"),131,HX_HCSTRING("FlxSpriteCharacter","\xb2","\xee","\x36","\x4b"),HX_HCSTRING("update","\x09","\x86","\x05","\x87"));		HX_STACK_VAR(tmp11,"tmp11");
-			HX_STACK_LINE(131)
+			HX_STACK_LINE(134)
+			Dynamic tmp11 = hx::SourceInfo(HX_HCSTRING("FlxSpriteCharacter.hx","\x4c","\x0f","\x1d","\xe1"),134,HX_HCSTRING("FlxSpriteCharacter","\xb2","\xee","\x36","\x4b"),HX_HCSTRING("update","\x09","\x86","\x05","\x87"));		HX_STACK_VAR(tmp11,"tmp11");
+			HX_STACK_LINE(134)
 			::haxe::Log_obj::trace(HX_HCSTRING("WALKING.","\xb5","\xde","\xc0","\xc1"),tmp11);
-			HX_STACK_LINE(132)
-			::flixel::math::FlxPoint tmp12 = this->acceleration;		HX_STACK_VAR(tmp12,"tmp12");
-			HX_STACK_LINE(132)
-			Float tmp13 = tmp12->x;		HX_STACK_VAR(tmp13,"tmp13");
-			HX_STACK_LINE(132)
-			Dynamic tmp14 = hx::SourceInfo(HX_HCSTRING("FlxSpriteCharacter.hx","\x4c","\x0f","\x1d","\xe1"),132,HX_HCSTRING("FlxSpriteCharacter","\xb2","\xee","\x36","\x4b"),HX_HCSTRING("update","\x09","\x86","\x05","\x87"));		HX_STACK_VAR(tmp14,"tmp14");
-			HX_STACK_LINE(132)
-			::haxe::Log_obj::trace(tmp13,tmp14);
 		}
 		else{
-			HX_STACK_LINE(138)
+			HX_STACK_LINE(140)
 			::flixel::math::FlxPoint tmp8 = this->acceleration;		HX_STACK_VAR(tmp8,"tmp8");
-			HX_STACK_LINE(138)
+			HX_STACK_LINE(140)
 			tmp8->set_x((int)0);
 		}
-		HX_STACK_LINE(142)
+		HX_STACK_LINE(144)
 		::flixel::math::FlxPoint tmp8 = this->acceleration;		HX_STACK_VAR(tmp8,"tmp8");
-		HX_STACK_LINE(142)
+		HX_STACK_LINE(144)
 		tmp8->set_y((int)600);
 	}
 return null();
@@ -317,69 +309,61 @@ return null();
 
 
 ::FlxSpriteCharacter FlxSpriteCharacter_obj::SyncAgnosticFlxSpriteCharacter( ){
-	HX_STACK_FRAME("FlxSpriteCharacter","SyncAgnosticFlxSpriteCharacter",0x13f7c2ab,"FlxSpriteCharacter.SyncAgnosticFlxSpriteCharacter","FlxSpriteCharacter.hx",150,0xe11d0f4c)
+	HX_STACK_FRAME("FlxSpriteCharacter","SyncAgnosticFlxSpriteCharacter",0x13f7c2ab,"FlxSpriteCharacter.SyncAgnosticFlxSpriteCharacter","FlxSpriteCharacter.hx",152,0xe11d0f4c)
 	HX_STACK_THIS(this)
-	HX_STACK_LINE(172)
+	HX_STACK_LINE(174)
 	::flixel::input::keyboard::FlxKeyboard tmp = ::flixel::FlxG_obj::keys;		HX_STACK_VAR(tmp,"tmp");
-	HX_STACK_LINE(172)
+	HX_STACK_LINE(174)
 	bool tmp1 = tmp->checkKeyArrayState(Array_obj< int >::__new().Add((int)37).Add((int)65),(int)1);		HX_STACK_VAR(tmp1,"tmp1");
-	HX_STACK_LINE(172)
+	HX_STACK_LINE(174)
 	::AgnosticCharacter tmp2 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp2,"tmp2");
-	HX_STACK_LINE(172)
+	HX_STACK_LINE(174)
 	tmp2->leftButtonPressedBool = tmp1;
-	HX_STACK_LINE(173)
+	HX_STACK_LINE(175)
 	::flixel::input::keyboard::FlxKeyboard tmp3 = ::flixel::FlxG_obj::keys;		HX_STACK_VAR(tmp3,"tmp3");
-	HX_STACK_LINE(173)
+	HX_STACK_LINE(175)
 	bool tmp4 = tmp3->checkKeyArrayState(Array_obj< int >::__new().Add((int)39).Add((int)68),(int)1);		HX_STACK_VAR(tmp4,"tmp4");
-	HX_STACK_LINE(173)
+	HX_STACK_LINE(175)
 	::AgnosticCharacter tmp5 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp5,"tmp5");
-	HX_STACK_LINE(173)
+	HX_STACK_LINE(175)
 	tmp5->rightButtonPressedBool = tmp4;
-	HX_STACK_LINE(176)
+	HX_STACK_LINE(179)
 	::flixel::math::FlxPoint tmp6 = this->acceleration;		HX_STACK_VAR(tmp6,"tmp6");
-	HX_STACK_LINE(176)
-	Float tmp7 = tmp6->x;		HX_STACK_VAR(tmp7,"tmp7");
-	HX_STACK_LINE(176)
-	Dynamic tmp8 = hx::SourceInfo(HX_HCSTRING("FlxSpriteCharacter.hx","\x4c","\x0f","\x1d","\xe1"),176,HX_HCSTRING("FlxSpriteCharacter","\xb2","\xee","\x36","\x4b"),HX_HCSTRING("SyncAgnosticFlxSpriteCharacter","\x6f","\x6c","\xbe","\x93"));		HX_STACK_VAR(tmp8,"tmp8");
-	HX_STACK_LINE(176)
-	::haxe::Log_obj::trace(tmp7,tmp8);
-	HX_STACK_LINE(177)
-	::flixel::math::FlxPoint tmp9 = this->acceleration;		HX_STACK_VAR(tmp9,"tmp9");
-	HX_STACK_LINE(177)
-	::AgnosticCharacter tmp10 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp10,"tmp10");
-	HX_STACK_LINE(177)
-	tmp10->accelerationXFloat = tmp9->x;
-	HX_STACK_LINE(178)
-	::flixel::math::FlxPoint tmp11 = this->acceleration;		HX_STACK_VAR(tmp11,"tmp11");
-	HX_STACK_LINE(178)
-	::AgnosticCharacter tmp12 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp12,"tmp12");
-	HX_STACK_LINE(178)
-	tmp12->accelerationYFloat = tmp11->y;
 	HX_STACK_LINE(179)
-	::flixel::graphics::FlxGraphic tmp13 = this->graphic;		HX_STACK_VAR(tmp13,"tmp13");
+	::AgnosticCharacter tmp7 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp7,"tmp7");
 	HX_STACK_LINE(179)
-	::AgnosticCharacter tmp14 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp14,"tmp14");
-	HX_STACK_LINE(179)
-	tmp14->spriteAssetPathString = tmp13->assetsKey;
+	tmp7->accelerationXFloat = tmp6->x;
 	HX_STACK_LINE(180)
-	Float tmp15 = this->x;		HX_STACK_VAR(tmp15,"tmp15");
+	::flixel::math::FlxPoint tmp8 = this->acceleration;		HX_STACK_VAR(tmp8,"tmp8");
 	HX_STACK_LINE(180)
+	::AgnosticCharacter tmp9 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp9,"tmp9");
+	HX_STACK_LINE(180)
+	tmp9->accelerationYFloat = tmp8->y;
+	HX_STACK_LINE(181)
+	::flixel::graphics::FlxGraphic tmp10 = this->graphic;		HX_STACK_VAR(tmp10,"tmp10");
+	HX_STACK_LINE(181)
+	::AgnosticCharacter tmp11 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp11,"tmp11");
+	HX_STACK_LINE(181)
+	tmp11->spriteAssetPathString = tmp10->assetsKey;
+	HX_STACK_LINE(182)
+	Float tmp12 = this->x;		HX_STACK_VAR(tmp12,"tmp12");
+	HX_STACK_LINE(182)
+	::AgnosticCharacter tmp13 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp13,"tmp13");
+	HX_STACK_LINE(182)
+	tmp13->xPositionFloat = tmp12;
+	HX_STACK_LINE(183)
+	Float tmp14 = this->y;		HX_STACK_VAR(tmp14,"tmp14");
+	HX_STACK_LINE(183)
+	::AgnosticCharacter tmp15 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp15,"tmp15");
+	HX_STACK_LINE(183)
+	tmp15->yPositionFloat = tmp14;
+	HX_STACK_LINE(185)
 	::AgnosticCharacter tmp16 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp16,"tmp16");
-	HX_STACK_LINE(180)
-	tmp16->xPositionFloat = tmp15;
-	HX_STACK_LINE(181)
-	Float tmp17 = this->y;		HX_STACK_VAR(tmp17,"tmp17");
-	HX_STACK_LINE(181)
-	::AgnosticCharacter tmp18 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp18,"tmp18");
-	HX_STACK_LINE(181)
-	tmp18->yPositionFloat = tmp17;
-	HX_STACK_LINE(183)
-	::AgnosticCharacter tmp19 = this->agnosticObjectCharacter;		HX_STACK_VAR(tmp19,"tmp19");
-	HX_STACK_LINE(183)
-	::AgnosticCharacter tmp20 = tmp19->MovementObjectCharacter();		HX_STACK_VAR(tmp20,"tmp20");
-	HX_STACK_LINE(183)
-	tmp20->PreventMovementContradictionObjectCharacter();
-	HX_STACK_LINE(189)
+	HX_STACK_LINE(185)
+	::AgnosticCharacter tmp17 = tmp16->MovementObjectCharacter();		HX_STACK_VAR(tmp17,"tmp17");
+	HX_STACK_LINE(185)
+	tmp17->PreventMovementContradictionObjectCharacter();
+	HX_STACK_LINE(191)
 	return hx::ObjectPtr<OBJ_>(this);
 }
 

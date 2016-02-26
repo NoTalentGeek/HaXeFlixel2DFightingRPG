@@ -30,6 +30,7 @@
 	<set name="BUILD_DIR" value="export" />
 	<classpath name="source" />
 	<!--You can use rename="newName" to shorten the paths to individual subdirectories!-->
+	<assets path="assets" />
 	<assets path="assets/data" include="*.oel" />
 	<assets path="assets/images" include="*.png" />
 	<assets path="assets/sounds" include="*.wav" />
@@ -41,7 +42,7 @@
 	<haxelib name="flixel" />
 
 	<!--In case you want to use the addons package-->
-	<!--<haxelib name="flixel-addons" />-->
+	<haxelib name="flixel-addons" />
 
 	<!--In case you want to use the ui package-->
 	<!--<haxelib name="flixel-ui" />-->
