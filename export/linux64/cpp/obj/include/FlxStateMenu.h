@@ -10,7 +10,7 @@
 #endif
 HX_DECLARE_CLASS0(FlxSpriteCharacter)
 HX_DECLARE_CLASS0(FlxStateMenu)
-HX_DECLARE_CLASS0(TiledMapTiledLevel)
+HX_DECLARE_CLASS0(TiledMapMenu)
 HX_DECLARE_CLASS1(flixel,FlxBasic)
 HX_DECLARE_CLASS1(flixel,FlxObject)
 HX_DECLARE_CLASS1(flixel,FlxSprite)
@@ -45,7 +45,7 @@ class HXCPP_CLASS_ATTRIBUTES  FlxStateMenu_obj : public ::flixel::FlxState_obj{
 		::String __ToString() const { return HX_HCSTRING("FlxStateMenu","\x9e","\x0d","\xe9","\x47"); }
 
 		::FlxSpriteCharacter testFlxSpriteCharacter;
-		::TiledMapTiledLevel tiledLevelTiledMap;
+		::TiledMapMenu testTiledMapMenu;
 		virtual Void create( );
 
 		virtual Void update( Float _elapsedFloat);

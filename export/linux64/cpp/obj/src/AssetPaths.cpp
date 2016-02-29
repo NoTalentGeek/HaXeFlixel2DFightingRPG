@@ -24,21 +24,9 @@ Dynamic AssetPaths_obj::__Create(hx::DynamicArray inArgs)
 
 ::String AssetPaths_obj::sounds_go_here__txt;
 
-::String AssetPaths_obj::Map1__tmx;
-
-::String AssetPaths_obj::coin__png;
-
-::String AssetPaths_obj::capa01_B__png;
-
-::String AssetPaths_obj::capa01_A__png;
-
-::String AssetPaths_obj::logo__png;
-
-::String AssetPaths_obj::level__tmx;
-
-::String AssetPaths_obj::level__png;
-
 ::String AssetPaths_obj::spr0002__png;
+
+::String AssetPaths_obj::Menu__tmx;
 
 ::String AssetPaths_obj::data_goes_here__txt;
 
@@ -57,14 +45,8 @@ AssetPaths_obj::AssetPaths_obj()
 static hx::StorageInfo *sMemberStorageInfo = 0;
 static hx::StaticInfo sStaticStorageInfo[] = {
 	{hx::fsString,(void *) &AssetPaths_obj::sounds_go_here__txt,HX_HCSTRING("sounds_go_here__txt","\xe4","\xa8","\xcb","\x02")},
-	{hx::fsString,(void *) &AssetPaths_obj::Map1__tmx,HX_HCSTRING("Map1__tmx","\x6a","\x3b","\xcf","\xd9")},
-	{hx::fsString,(void *) &AssetPaths_obj::coin__png,HX_HCSTRING("coin__png","\x58","\x3a","\xfc","\x5b")},
-	{hx::fsString,(void *) &AssetPaths_obj::capa01_B__png,HX_HCSTRING("capa01_B__png","\xd6","\x91","\xa1","\x64")},
-	{hx::fsString,(void *) &AssetPaths_obj::capa01_A__png,HX_HCSTRING("capa01_A__png","\x77","\x35","\x46","\xfe")},
-	{hx::fsString,(void *) &AssetPaths_obj::logo__png,HX_HCSTRING("logo__png","\x3e","\x5a","\xa9","\xd9")},
-	{hx::fsString,(void *) &AssetPaths_obj::level__tmx,HX_HCSTRING("level__tmx","\xbb","\x31","\xa1","\x3e")},
-	{hx::fsString,(void *) &AssetPaths_obj::level__png,HX_HCSTRING("level__png","\x85","\x29","\x9e","\x3e")},
 	{hx::fsString,(void *) &AssetPaths_obj::spr0002__png,HX_HCSTRING("spr0002__png","\x72","\xae","\x3f","\x8e")},
+	{hx::fsString,(void *) &AssetPaths_obj::Menu__tmx,HX_HCSTRING("Menu__tmx","\xa0","\x9f","\xb2","\x9b")},
 	{hx::fsString,(void *) &AssetPaths_obj::data_goes_here__txt,HX_HCSTRING("data_goes_here__txt","\xec","\x22","\x23","\xe8")},
 	{hx::fsString,(void *) &AssetPaths_obj::spr0001__png,HX_HCSTRING("spr0001__png","\x13","\x52","\xe4","\x27")},
 	{hx::fsString,(void *) &AssetPaths_obj::images_go_here__txt,HX_HCSTRING("images_go_here__txt","\x70","\x18","\x1f","\x93")},
@@ -76,14 +58,8 @@ static hx::StaticInfo sStaticStorageInfo[] = {
 static void sMarkStatics(HX_MARK_PARAMS) {
 	HX_MARK_MEMBER_NAME(AssetPaths_obj::__mClass,"__mClass");
 	HX_MARK_MEMBER_NAME(AssetPaths_obj::sounds_go_here__txt,"sounds_go_here__txt");
-	HX_MARK_MEMBER_NAME(AssetPaths_obj::Map1__tmx,"Map1__tmx");
-	HX_MARK_MEMBER_NAME(AssetPaths_obj::coin__png,"coin__png");
-	HX_MARK_MEMBER_NAME(AssetPaths_obj::capa01_B__png,"capa01_B__png");
-	HX_MARK_MEMBER_NAME(AssetPaths_obj::capa01_A__png,"capa01_A__png");
-	HX_MARK_MEMBER_NAME(AssetPaths_obj::logo__png,"logo__png");
-	HX_MARK_MEMBER_NAME(AssetPaths_obj::level__tmx,"level__tmx");
-	HX_MARK_MEMBER_NAME(AssetPaths_obj::level__png,"level__png");
 	HX_MARK_MEMBER_NAME(AssetPaths_obj::spr0002__png,"spr0002__png");
+	HX_MARK_MEMBER_NAME(AssetPaths_obj::Menu__tmx,"Menu__tmx");
 	HX_MARK_MEMBER_NAME(AssetPaths_obj::data_goes_here__txt,"data_goes_here__txt");
 	HX_MARK_MEMBER_NAME(AssetPaths_obj::spr0001__png,"spr0001__png");
 	HX_MARK_MEMBER_NAME(AssetPaths_obj::images_go_here__txt,"images_go_here__txt");
@@ -94,14 +70,8 @@ static void sMarkStatics(HX_MARK_PARAMS) {
 static void sVisitStatics(HX_VISIT_PARAMS) {
 	HX_VISIT_MEMBER_NAME(AssetPaths_obj::__mClass,"__mClass");
 	HX_VISIT_MEMBER_NAME(AssetPaths_obj::sounds_go_here__txt,"sounds_go_here__txt");
-	HX_VISIT_MEMBER_NAME(AssetPaths_obj::Map1__tmx,"Map1__tmx");
-	HX_VISIT_MEMBER_NAME(AssetPaths_obj::coin__png,"coin__png");
-	HX_VISIT_MEMBER_NAME(AssetPaths_obj::capa01_B__png,"capa01_B__png");
-	HX_VISIT_MEMBER_NAME(AssetPaths_obj::capa01_A__png,"capa01_A__png");
-	HX_VISIT_MEMBER_NAME(AssetPaths_obj::logo__png,"logo__png");
-	HX_VISIT_MEMBER_NAME(AssetPaths_obj::level__tmx,"level__tmx");
-	HX_VISIT_MEMBER_NAME(AssetPaths_obj::level__png,"level__png");
 	HX_VISIT_MEMBER_NAME(AssetPaths_obj::spr0002__png,"spr0002__png");
+	HX_VISIT_MEMBER_NAME(AssetPaths_obj::Menu__tmx,"Menu__tmx");
 	HX_VISIT_MEMBER_NAME(AssetPaths_obj::data_goes_here__txt,"data_goes_here__txt");
 	HX_VISIT_MEMBER_NAME(AssetPaths_obj::spr0001__png,"spr0001__png");
 	HX_VISIT_MEMBER_NAME(AssetPaths_obj::images_go_here__txt,"images_go_here__txt");
@@ -114,14 +84,8 @@ hx::Class AssetPaths_obj::__mClass;
 
 static ::String sStaticFields[] = {
 	HX_HCSTRING("sounds_go_here__txt","\xe4","\xa8","\xcb","\x02"),
-	HX_HCSTRING("Map1__tmx","\x6a","\x3b","\xcf","\xd9"),
-	HX_HCSTRING("coin__png","\x58","\x3a","\xfc","\x5b"),
-	HX_HCSTRING("capa01_B__png","\xd6","\x91","\xa1","\x64"),
-	HX_HCSTRING("capa01_A__png","\x77","\x35","\x46","\xfe"),
-	HX_HCSTRING("logo__png","\x3e","\x5a","\xa9","\xd9"),
-	HX_HCSTRING("level__tmx","\xbb","\x31","\xa1","\x3e"),
-	HX_HCSTRING("level__png","\x85","\x29","\x9e","\x3e"),
 	HX_HCSTRING("spr0002__png","\x72","\xae","\x3f","\x8e"),
+	HX_HCSTRING("Menu__tmx","\xa0","\x9f","\xb2","\x9b"),
 	HX_HCSTRING("data_goes_here__txt","\xec","\x22","\x23","\xe8"),
 	HX_HCSTRING("spr0001__png","\x13","\x52","\xe4","\x27"),
 	HX_HCSTRING("images_go_here__txt","\x70","\x18","\x1f","\x93"),
@@ -156,14 +120,8 @@ void AssetPaths_obj::__register()
 void AssetPaths_obj::__boot()
 {
 	sounds_go_here__txt= HX_HCSTRING("assets/sounds/sounds-go-here.txt","\x8d","\xb6","\x3d","\xa7");
-	Map1__tmx= HX_HCSTRING("assets/tiled/Map1.tmx","\x6b","\x60","\x57","\xd4");
-	coin__png= HX_HCSTRING("assets/tiled/PROTOTYPE/coin.png","\x3e","\x0f","\xec","\x07");
-	capa01_B__png= HX_HCSTRING("assets/tiled/PROTOTYPE/decorations/capa01_B.png","\x0c","\x7d","\x4b","\xfb");
-	capa01_A__png= HX_HCSTRING("assets/tiled/PROTOTYPE/decorations/capa01_A.png","\x8b","\xe8","\xe4","\x67");
-	logo__png= HX_HCSTRING("assets/tiled/PROTOTYPE/logo.png","\x18","\xee","\x61","\xd1");
-	level__tmx= HX_HCSTRING("assets/tiled/PROTOTYPE/level.tmx","\xc3","\xc0","\xc2","\x1f");
-	level__png= HX_HCSTRING("assets/tiled/PROTOTYPE/level.png","\x8d","\xb8","\xbf","\x1f");
-	spr0002__png= HX_HCSTRING("assets/tiled/spr0002.png","\x4d","\x83","\xfd","\xc2");
+	spr0002__png= HX_HCSTRING("assets/tiled/Menu/Tileset/spr0002.png","\x6c","\xe4","\xa5","\xf0");
+	Menu__tmx= HX_HCSTRING("assets/tiled/Menu/Menu.tmx","\xdb","\xbb","\xcb","\x80");
 	data_goes_here__txt= HX_HCSTRING("assets/data/data-goes-here.txt","\x5f","\x4b","\xb2","\x8e");
 	spr0001__png= HX_HCSTRING("assets/images/spr0001.png","\x26","\x4a","\x56","\xb0");
 	images_go_here__txt= HX_HCSTRING("assets/images/images-go-here.txt","\x0d","\x1d","\x45","\xa6");

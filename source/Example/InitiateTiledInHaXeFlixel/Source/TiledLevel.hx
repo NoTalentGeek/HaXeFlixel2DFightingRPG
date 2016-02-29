@@ -15,19 +15,14 @@ import flixel.group.FlxGroup;
 import flixel.tile.FlxTilemap;
 import haxe.io.Path;
 
-
-/*WHOLE CLASS IS PROTOTYPE!!!*/
-/*WORK WITH TILEMAP IN A PROJECT FOLDER.*/
-
 /**
  * @author Samuel Batista
  */
-class TiledMapTiledLevel extends TiledMap
+class TiledLevel extends TiledMap
 {
 	// For each "Tile Layer" in the map, you must define a "tileset" property which contains the name of a tile sheet image 
 	// used to draw tiles in that layer (without file extension). The image file must be located in the directory specified bellow.
-	//private inline static var c_PATH_LEVEL_TILESHEETS = "assets/tiled/";
-	private inline static var c_PATH_LEVEL_TILESHEETS = "assets/tiled/PROTOTYPE/";
+	private inline static var c_PATH_LEVEL_TILESHEETS = "assets/tiled/";
 	
 	// Array of tilemaps used for collision
 	public var foregroundTiles:FlxGroup;
@@ -38,9 +33,8 @@ class TiledMapTiledLevel extends TiledMap
 	// Sprites of images layers
 	public var imagesLayer:FlxGroup;
 	
-	public function new(tiledLevel:Dynamic, state:FlxStateMenu)
+	public function new(tiledLevel:Dynamic, state:PlayState)
 	{
-		trace(tiledLevel);
 		super(tiledLevel);
 		
 		imagesLayer = new FlxGroup();
@@ -100,7 +94,7 @@ class TiledMapTiledLevel extends TiledMap
 		}
 	}
 	
-	public function loadObjects(state:FlxStateMenu)
+	public function loadObjects(state:PlayState)
 	{
 		var layer:TiledObjectLayer;
 		for (layer in layers)
@@ -131,14 +125,11 @@ class TiledMapTiledLevel extends TiledMap
 	
 	private function loadImageObject(object:TiledObject)
 	{
-
-		/*PENDING: For image sprite set the path to be absolute to the image files.*/
-
 		var tilesImageCollection:TiledTileSet = this.getTileSet("imageCollection");
 		var tileImagesSource:TiledImageTile = tilesImageCollection.getImageSourceByGid(object.gid);
 		
 		//decorative sprites
-		var levelsDir:String = "assets/tiled/PROTOTYPE/";
+		var levelsDir:String = "assets/tiled/";
 		
 		var decoSprite:FlxSprite = new FlxSprite(0, 0, levelsDir + tileImagesSource.source);
 		if (decoSprite.width != object.width
@@ -165,7 +156,7 @@ class TiledMapTiledLevel extends TiledMap
 		backgroundLayer.add(decoSprite);
 	}
 	
-	private function loadObject(state:FlxStateMenu, o:TiledObject, g:TiledObjectLayer, group:FlxGroup)
+	private function loadObject(state:PlayState, o:TiledObject, g:TiledObjectLayer, group:FlxGroup)
 	{
 		var x:Int = o.x;
 		var y:Int = o.y;
@@ -184,24 +175,24 @@ class TiledMapTiledLevel extends TiledMap
 				player.acceleration.y = 400;
 				player.drag.x = player.maxVelocity.x * 4;
 				FlxG.camera.follow(player);
-				//state.player = player;
+				state.player = player;
 				group.add(player);
 				
 			case "floor":
 				var floor = new FlxObject(x, y, o.width, o.height);
-				//state.floor = floor;
+				state.floor = floor;
 				
 			case "coin":
 				var tileset = g.map.getGidOwner(o.gid);
 				var coin = new FlxSprite(x, y, c_PATH_LEVEL_TILESHEETS + tileset.imageSource);
-				//state.coins.add(coin);
+				state.coins.add(coin);
 				
 			case "exit":
 				// Create the level exit
 				var exit = new FlxSprite(x, y);
 				exit.makeGraphic(32, 32, 0xff3f3f3f);
 				exit.exists = false;
-				//state.exit = exit;
+				state.exit = exit;
 				group.add(exit);
 		}
 	}

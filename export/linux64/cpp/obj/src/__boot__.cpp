@@ -639,8 +639,8 @@
 #ifndef INCLUDED_Xml
 #include <Xml.h>
 #endif
-#ifndef INCLUDED_TiledMapTiledLevel
-#include <TiledMapTiledLevel.h>
+#ifndef INCLUDED_TiledMapMenu
+#include <TiledMapMenu.h>
 #endif
 #ifndef INCLUDED_flixel_FlxObject
 #include <flixel/FlxObject.h>
@@ -1747,7 +1747,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::FlxCamera_obj::__register();
 ::flixel::math::FlxPoint_obj::__register();
 ::Xml_obj::__register();
-::TiledMapTiledLevel_obj::__register();
+::TiledMapMenu_obj::__register();
 ::flixel::FlxObject_obj::__register();
 ::flixel::math::FlxRect_obj::__register();
 ::flixel::FlxBasic_obj::__register();
@@ -2124,7 +2124,7 @@ hx::RegisterResources( hx::GetResources() );
 ::flixel::FlxBasic_obj::__boot();
 ::flixel::math::FlxRect_obj::__boot();
 ::flixel::FlxObject_obj::__boot();
-::TiledMapTiledLevel_obj::__boot();
+::TiledMapMenu_obj::__boot();
 ::Xml_obj::__boot();
 ::flixel::math::FlxPoint_obj::__boot();
 ::flixel::FlxCamera_obj::__boot();

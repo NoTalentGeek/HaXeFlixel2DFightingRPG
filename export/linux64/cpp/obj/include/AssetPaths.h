@@ -29,14 +29,8 @@ class HXCPP_CLASS_ATTRIBUTES  AssetPaths_obj : public hx::Object{
 
 		static void __boot();
 		static ::String sounds_go_here__txt;
-		static ::String Map1__tmx;
-		static ::String coin__png;
-		static ::String capa01_B__png;
-		static ::String capa01_A__png;
-		static ::String logo__png;
-		static ::String level__tmx;
-		static ::String level__png;
 		static ::String spr0002__png;
+		static ::String Menu__tmx;
 		static ::String data_goes_here__txt;
 		static ::String spr0001__png;
 		static ::String images_go_here__txt;

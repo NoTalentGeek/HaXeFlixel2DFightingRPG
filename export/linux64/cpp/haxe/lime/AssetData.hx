@@ -18,22 +18,10 @@ class AssetData {
 			
 			path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
 			type.set ("assets/sounds/sounds-go-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/tiled/Map1.tmx", "assets/tiled/Map1.tmx");
-			type.set ("assets/tiled/Map1.tmx", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/tiled/PROTOTYPE/coin.png", "assets/tiled/PROTOTYPE/coin.png");
-			type.set ("assets/tiled/PROTOTYPE/coin.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			path.set ("assets/tiled/PROTOTYPE/decorations/capa01_B.png", "assets/tiled/PROTOTYPE/decorations/capa01_B.png");
-			type.set ("assets/tiled/PROTOTYPE/decorations/capa01_B.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			path.set ("assets/tiled/PROTOTYPE/decorations/capa01_A.png", "assets/tiled/PROTOTYPE/decorations/capa01_A.png");
-			type.set ("assets/tiled/PROTOTYPE/decorations/capa01_A.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			path.set ("assets/tiled/PROTOTYPE/logo.png", "assets/tiled/PROTOTYPE/logo.png");
-			type.set ("assets/tiled/PROTOTYPE/logo.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			path.set ("assets/tiled/PROTOTYPE/level.tmx", "assets/tiled/PROTOTYPE/level.tmx");
-			type.set ("assets/tiled/PROTOTYPE/level.tmx", Reflect.field (AssetType, "text".toUpperCase ()));
-			path.set ("assets/tiled/PROTOTYPE/level.png", "assets/tiled/PROTOTYPE/level.png");
-			type.set ("assets/tiled/PROTOTYPE/level.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			path.set ("assets/tiled/spr0002.png", "assets/tiled/spr0002.png");
-			type.set ("assets/tiled/spr0002.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/tiled/Menu/Tileset/spr0002.png", "assets/tiled/Menu/Tileset/spr0002.png");
+			type.set ("assets/tiled/Menu/Tileset/spr0002.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			path.set ("assets/tiled/Menu/Menu.tmx", "assets/tiled/Menu/Menu.tmx");
+			type.set ("assets/tiled/Menu/Menu.tmx", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 			type.set ("assets/data/data-goes-here.txt", Reflect.field (AssetType, "text".toUpperCase ()));
 			path.set ("assets/images/spr0001.png", "assets/images/spr0001.png");

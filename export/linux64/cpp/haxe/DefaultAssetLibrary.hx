@@ -66,12 +66,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
-		
-		
-		
-		
 		Font.registerFont (__ASSET__flixel_fonts_nokiafc22_ttf);
 		Font.registerFont (__ASSET__flixel_fonts_monsterrat_ttf);
 		
@@ -80,12 +74,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -601,12 +589,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
-		
-		
-		
-		
-		
-		
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_nokiafc22_ttf);
 		openfl.text.Font.registerFont (__ASSET__OPENFL__flixel_fonts_monsterrat_ttf);
 		
@@ -617,22 +599,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		path.set ("assets/sounds/sounds-go-here.txt", "assets/sounds/sounds-go-here.txt");
 		type.set ("assets/sounds/sounds-go-here.txt", AssetType.TEXT);
-		path.set ("assets/tiled/Map1.tmx", "assets/tiled/Map1.tmx");
-		type.set ("assets/tiled/Map1.tmx", AssetType.TEXT);
-		path.set ("assets/tiled/PROTOTYPE/coin.png", "assets/tiled/PROTOTYPE/coin.png");
-		type.set ("assets/tiled/PROTOTYPE/coin.png", AssetType.IMAGE);
-		path.set ("assets/tiled/PROTOTYPE/decorations/capa01_B.png", "assets/tiled/PROTOTYPE/decorations/capa01_B.png");
-		type.set ("assets/tiled/PROTOTYPE/decorations/capa01_B.png", AssetType.IMAGE);
-		path.set ("assets/tiled/PROTOTYPE/decorations/capa01_A.png", "assets/tiled/PROTOTYPE/decorations/capa01_A.png");
-		type.set ("assets/tiled/PROTOTYPE/decorations/capa01_A.png", AssetType.IMAGE);
-		path.set ("assets/tiled/PROTOTYPE/logo.png", "assets/tiled/PROTOTYPE/logo.png");
-		type.set ("assets/tiled/PROTOTYPE/logo.png", AssetType.IMAGE);
-		path.set ("assets/tiled/PROTOTYPE/level.tmx", "assets/tiled/PROTOTYPE/level.tmx");
-		type.set ("assets/tiled/PROTOTYPE/level.tmx", AssetType.TEXT);
-		path.set ("assets/tiled/PROTOTYPE/level.png", "assets/tiled/PROTOTYPE/level.png");
-		type.set ("assets/tiled/PROTOTYPE/level.png", AssetType.IMAGE);
-		path.set ("assets/tiled/spr0002.png", "assets/tiled/spr0002.png");
-		type.set ("assets/tiled/spr0002.png", AssetType.IMAGE);
+		path.set ("assets/tiled/Menu/Tileset/spr0002.png", "assets/tiled/Menu/Tileset/spr0002.png");
+		type.set ("assets/tiled/Menu/Tileset/spr0002.png", AssetType.IMAGE);
+		path.set ("assets/tiled/Menu/Menu.tmx", "assets/tiled/Menu/Menu.tmx");
+		type.set ("assets/tiled/Menu/Menu.tmx", AssetType.TEXT);
 		path.set ("assets/data/data-goes-here.txt", "assets/data/data-goes-here.txt");
 		type.set ("assets/data/data-goes-here.txt", AssetType.TEXT);
 		path.set ("assets/images/spr0001.png", "assets/images/spr0001.png");
@@ -661,30 +631,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		id = "assets/sounds/sounds-go-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-		id = "assets/tiled/Map1.tmx";
+		id = "assets/tiled/Menu/Tileset/spr0002.png";
+		path.set (id, id);
+		type.set (id, AssetType.IMAGE);
+		id = "assets/tiled/Menu/Menu.tmx";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
-		id = "assets/tiled/PROTOTYPE/coin.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/tiled/PROTOTYPE/decorations/capa01_B.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/tiled/PROTOTYPE/decorations/capa01_A.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/tiled/PROTOTYPE/logo.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/tiled/PROTOTYPE/level.tmx";
-		path.set (id, id);
-		type.set (id, AssetType.TEXT);
-		id = "assets/tiled/PROTOTYPE/level.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
-		id = "assets/tiled/spr0002.png";
-		path.set (id, id);
-		type.set (id, AssetType.IMAGE);
 		id = "assets/data/data-goes-here.txt";
 		path.set (id, id);
 		type.set (id, AssetType.TEXT);
@@ -737,12 +689,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		#if (windows || mac || linux)
 		
 		var useManifest = false;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
-		useManifest = true;
 		useManifest = true;
 		useManifest = true;
 		useManifest = true;
@@ -1492,12 +1438,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 
-
-
-
-
-
-
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_beep_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_sounds_flixel_ogg extends null { }
 @:keep @:bind #if display private #end class __ASSET__flixel_fonts_nokiafc22_ttf extends null { }
@@ -1506,12 +1446,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 #elseif html5
-
-
-
-
-
-
 
 
 

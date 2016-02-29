@@ -4991,36 +4991,25 @@
   <file name="src/ValueType.cpp">
    <depend name="include/ValueType.h"/>
   </file>
-  <file name="src/TiledMapTiledLevel.cpp">
-   <depend name="include/FlxStateMenu.h"/>
-   <depend name="include/Std.h"/>
-   <depend name="include/TiledMapTiledLevel.h"/>
+  <file name="src/TiledMapMenu.cpp">
+   <depend name="include/TiledMapMenu.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxCamera.h"/>
-   <depend name="include/flixel/FlxCameraFollowStyle.h"/>
    <depend name="include/flixel/FlxG.h"/>
    <depend name="include/flixel/FlxObject.h"/>
-   <depend name="include/flixel/FlxSprite.h"/>
    <depend name="include/flixel/FlxState.h"/>
-   <depend name="include/flixel/addons/editors/tiled/TiledImageLayer.h"/>
-   <depend name="include/flixel/addons/editors/tiled/TiledImageTile.h"/>
    <depend name="include/flixel/addons/editors/tiled/TiledLayer.h"/>
    <depend name="include/flixel/addons/editors/tiled/TiledLayerType.h"/>
    <depend name="include/flixel/addons/editors/tiled/TiledMap.h"/>
-   <depend name="include/flixel/addons/editors/tiled/TiledObject.h"/>
-   <depend name="include/flixel/addons/editors/tiled/TiledObjectLayer.h"/>
    <depend name="include/flixel/addons/editors/tiled/TiledPropertySet.h"/>
    <depend name="include/flixel/addons/editors/tiled/TiledTileLayer.h"/>
    <depend name="include/flixel/addons/editors/tiled/TiledTileSet.h"/>
    <depend name="include/flixel/group/FlxTypedGroup.h"/>
-   <depend name="include/flixel/math/FlxPoint.h"/>
    <depend name="include/flixel/tile/FlxBaseTilemap.h"/>
    <depend name="include/flixel/tile/FlxTilemap.h"/>
    <depend name="include/flixel/tile/FlxTilemapAutoTiling.h"/>
    <depend name="include/flixel/util/IFlxDestroyable.h"/>
-   <depend name="include/flixel/util/IFlxPooled.h"/>
    <depend name="include/haxe/IMap.h"/>
-   <depend name="include/haxe/Log.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/haxe/io/Path.h"/>
   </file>
@@ -5073,7 +5062,7 @@
   <file name="src/FlxStateMenu.cpp">
    <depend name="include/FlxSpriteCharacter.h"/>
    <depend name="include/FlxStateMenu.h"/>
-   <depend name="include/TiledMapTiledLevel.h"/>
+   <depend name="include/TiledMapMenu.h"/>
    <depend name="include/flixel/FlxBasic.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/FlxSprite.h"/>
@@ -5896,7 +5885,7 @@
    <depend name="include/flixel/FlxCamera.h"/>
    <depend name="include/flixel/math/FlxPoint.h"/>
    <depend name="include/Xml.h"/>
-   <depend name="include/TiledMapTiledLevel.h"/>
+   <depend name="include/TiledMapMenu.h"/>
    <depend name="include/flixel/FlxObject.h"/>
    <depend name="include/flixel/math/FlxRect.h"/>
    <depend name="include/flixel/FlxBasic.h"/>

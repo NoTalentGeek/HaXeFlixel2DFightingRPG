@@ -6,8 +6,8 @@
 #ifndef INCLUDED_FlxStateMenu
 #include <FlxStateMenu.h>
 #endif
-#ifndef INCLUDED_TiledMapTiledLevel
-#include <TiledMapTiledLevel.h>
+#ifndef INCLUDED_TiledMapMenu
+#include <TiledMapMenu.h>
 #endif
 #ifndef INCLUDED_flixel_FlxBasic
 #include <flixel/FlxBasic.h>
@@ -37,9 +37,9 @@ HX_STACK_FRAME("FlxStateMenu","new",0x3dfed590,"FlxStateMenu.new","FlxStateMenu.
 HX_STACK_THIS(this)
 HX_STACK_ARG(MaxSize,"MaxSize")
 {
+	HX_STACK_LINE(25)
+	this->testTiledMapMenu = null();
 	HX_STACK_LINE(24)
-	this->tiledLevelTiledMap = null();
-	HX_STACK_LINE(21)
 	this->testFlxSpriteCharacter = null();
 	HX_STACK_LINE(18)
 	Dynamic tmp = MaxSize;		HX_STACK_VAR(tmp,"tmp");
@@ -65,34 +65,28 @@ Dynamic FlxStateMenu_obj::__Create(hx::DynamicArray inArgs)
 
 Void FlxStateMenu_obj::create( ){
 {
-		HX_STACK_FRAME("FlxStateMenu","create",0x490fbfcc,"FlxStateMenu.create","FlxStateMenu.hx",27,0xd0100be0)
+		HX_STACK_FRAME("FlxStateMenu","create",0x490fbfcc,"FlxStateMenu.create","FlxStateMenu.hx",31,0xd0100be0)
 		HX_STACK_THIS(this)
-		HX_STACK_LINE(29)
+		HX_STACK_LINE(33)
 		this->super::create();
-		HX_STACK_LINE(33)
-		::TiledMapTiledLevel tmp = ::TiledMapTiledLevel_obj::__new(HX_HCSTRING("assets/tiled/PROTOTYPE/level.tmx","\xc3","\xc0","\xc2","\x1f"),hx::ObjectPtr<OBJ_>(this));		HX_STACK_VAR(tmp,"tmp");
-		HX_STACK_LINE(33)
-		this->tiledLevelTiledMap = tmp;
+		HX_STACK_LINE(37)
+		::FlxSpriteCharacter tmp = ::FlxSpriteCharacter_obj::__new((int)0,(int)0);		HX_STACK_VAR(tmp,"tmp");
+		HX_STACK_LINE(37)
+		this->testFlxSpriteCharacter = tmp;
 		HX_STACK_LINE(38)
-		::TiledMapTiledLevel tmp1 = this->tiledLevelTiledMap;		HX_STACK_VAR(tmp1,"tmp1");
+		::TiledMapMenu tmp1 = ::TiledMapMenu_obj::__new(hx::ObjectPtr<OBJ_>(this),HX_HCSTRING("assets/tiled/Menu/Menu.tmx","\xdb","\xbb","\xcb","\x80"));		HX_STACK_VAR(tmp1,"tmp1");
 		HX_STACK_LINE(38)
-		::flixel::group::FlxTypedGroup tmp2 = tmp1->imagesLayer;		HX_STACK_VAR(tmp2,"tmp2");
-		HX_STACK_LINE(38)
+		this->testTiledMapMenu = tmp1;
+		HX_STACK_LINE(39)
+		::FlxSpriteCharacter tmp2 = this->testFlxSpriteCharacter;		HX_STACK_VAR(tmp2,"tmp2");
+		HX_STACK_LINE(39)
 		this->add(tmp2);
-		HX_STACK_LINE(42)
-		::TiledMapTiledLevel tmp3 = this->tiledLevelTiledMap;		HX_STACK_VAR(tmp3,"tmp3");
-		HX_STACK_LINE(42)
-		::flixel::group::FlxTypedGroup tmp4 = tmp3->foregroundTiles;		HX_STACK_VAR(tmp4,"tmp4");
-		HX_STACK_LINE(42)
+		HX_STACK_LINE(40)
+		::TiledMapMenu tmp3 = this->testTiledMapMenu;		HX_STACK_VAR(tmp3,"tmp3");
+		HX_STACK_LINE(40)
+		::flixel::group::FlxTypedGroup tmp4 = tmp3->foregroundTileLayerFlxGroup;		HX_STACK_VAR(tmp4,"tmp4");
+		HX_STACK_LINE(40)
 		this->add(tmp4);
-		HX_STACK_LINE(44)
-		::FlxSpriteCharacter tmp5 = ::FlxSpriteCharacter_obj::__new((int)0,(int)0);		HX_STACK_VAR(tmp5,"tmp5");
-		HX_STACK_LINE(44)
-		this->testFlxSpriteCharacter = tmp5;
-		HX_STACK_LINE(45)
-		::FlxSpriteCharacter tmp6 = this->testFlxSpriteCharacter;		HX_STACK_VAR(tmp6,"tmp6");
-		HX_STACK_LINE(45)
-		this->add(tmp6);
 	}
 return null();
 }
@@ -100,19 +94,19 @@ return null();
 
 Void FlxStateMenu_obj::update( Float _elapsedFloat){
 {
-		HX_STACK_FRAME("FlxStateMenu","update",0x5405ded9,"FlxStateMenu.update","FlxStateMenu.hx",53,0xd0100be0)
+		HX_STACK_FRAME("FlxStateMenu","update",0x5405ded9,"FlxStateMenu.update","FlxStateMenu.hx",48,0xd0100be0)
 		HX_STACK_THIS(this)
 		HX_STACK_ARG(_elapsedFloat,"_elapsedFloat")
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(50)
 		Float tmp = _elapsedFloat;		HX_STACK_VAR(tmp,"tmp");
-		HX_STACK_LINE(55)
+		HX_STACK_LINE(50)
 		this->super::update(tmp);
-		HX_STACK_LINE(58)
-		::TiledMapTiledLevel tmp1 = this->tiledLevelTiledMap;		HX_STACK_VAR(tmp1,"tmp1");
-		HX_STACK_LINE(58)
+		HX_STACK_LINE(53)
+		::TiledMapMenu tmp1 = this->testTiledMapMenu;		HX_STACK_VAR(tmp1,"tmp1");
+		HX_STACK_LINE(53)
 		::FlxSpriteCharacter tmp2 = this->testFlxSpriteCharacter;		HX_STACK_VAR(tmp2,"tmp2");
-		HX_STACK_LINE(58)
-		tmp1->collideWithLevel(tmp2,null(),null());
+		HX_STACK_LINE(53)
+		tmp1->ObjectCollideWithLayerBool(tmp2,null(),null());
 	}
 return null();
 }
@@ -127,7 +121,7 @@ void FlxStateMenu_obj::__Mark(HX_MARK_PARAMS)
 {
 	HX_MARK_BEGIN_CLASS(FlxStateMenu);
 	HX_MARK_MEMBER_NAME(testFlxSpriteCharacter,"testFlxSpriteCharacter");
-	HX_MARK_MEMBER_NAME(tiledLevelTiledMap,"tiledLevelTiledMap");
+	HX_MARK_MEMBER_NAME(testTiledMapMenu,"testTiledMapMenu");
 	::flixel::FlxState_obj::__Mark(HX_MARK_ARG);
 	HX_MARK_END_CLASS();
 }
@@ -135,7 +129,7 @@ void FlxStateMenu_obj::__Mark(HX_MARK_PARAMS)
 void FlxStateMenu_obj::__Visit(HX_VISIT_PARAMS)
 {
 	HX_VISIT_MEMBER_NAME(testFlxSpriteCharacter,"testFlxSpriteCharacter");
-	HX_VISIT_MEMBER_NAME(tiledLevelTiledMap,"tiledLevelTiledMap");
+	HX_VISIT_MEMBER_NAME(testTiledMapMenu,"testTiledMapMenu");
 	::flixel::FlxState_obj::__Visit(HX_VISIT_ARG);
 }
 
@@ -146,8 +140,8 @@ Dynamic FlxStateMenu_obj::__Field(const ::String &inName,hx::PropertyAccess inCa
 		if (HX_FIELD_EQ(inName,"create") ) { return create_dyn(); }
 		if (HX_FIELD_EQ(inName,"update") ) { return update_dyn(); }
 		break;
-	case 18:
-		if (HX_FIELD_EQ(inName,"tiledLevelTiledMap") ) { return tiledLevelTiledMap; }
+	case 16:
+		if (HX_FIELD_EQ(inName,"testTiledMapMenu") ) { return testTiledMapMenu; }
 		break;
 	case 22:
 		if (HX_FIELD_EQ(inName,"testFlxSpriteCharacter") ) { return testFlxSpriteCharacter; }
@@ -158,8 +152,8 @@ Dynamic FlxStateMenu_obj::__Field(const ::String &inName,hx::PropertyAccess inCa
 Dynamic FlxStateMenu_obj::__SetField(const ::String &inName,const Dynamic &inValue,hx::PropertyAccess inCallProp)
 {
 	switch(inName.length) {
-	case 18:
-		if (HX_FIELD_EQ(inName,"tiledLevelTiledMap") ) { tiledLevelTiledMap=inValue.Cast< ::TiledMapTiledLevel >(); return inValue; }
+	case 16:
+		if (HX_FIELD_EQ(inName,"testTiledMapMenu") ) { testTiledMapMenu=inValue.Cast< ::TiledMapMenu >(); return inValue; }
 		break;
 	case 22:
 		if (HX_FIELD_EQ(inName,"testFlxSpriteCharacter") ) { testFlxSpriteCharacter=inValue.Cast< ::FlxSpriteCharacter >(); return inValue; }
@@ -170,14 +164,14 @@ Dynamic FlxStateMenu_obj::__SetField(const ::String &inName,const Dynamic &inVal
 void FlxStateMenu_obj::__GetFields(Array< ::String> &outFields)
 {
 	outFields->push(HX_HCSTRING("testFlxSpriteCharacter","\x84","\x33","\x73","\x20"));
-	outFields->push(HX_HCSTRING("tiledLevelTiledMap","\x14","\xa9","\x32","\x39"));
+	outFields->push(HX_HCSTRING("testTiledMapMenu","\xf7","\xa6","\x3b","\x31"));
 	super::__GetFields(outFields);
 };
 
 #if HXCPP_SCRIPTABLE
 static hx::StorageInfo sMemberStorageInfo[] = {
 	{hx::fsObject /*::FlxSpriteCharacter*/ ,(int)offsetof(FlxStateMenu_obj,testFlxSpriteCharacter),HX_HCSTRING("testFlxSpriteCharacter","\x84","\x33","\x73","\x20")},
-	{hx::fsObject /*::TiledMapTiledLevel*/ ,(int)offsetof(FlxStateMenu_obj,tiledLevelTiledMap),HX_HCSTRING("tiledLevelTiledMap","\x14","\xa9","\x32","\x39")},
+	{hx::fsObject /*::TiledMapMenu*/ ,(int)offsetof(FlxStateMenu_obj,testTiledMapMenu),HX_HCSTRING("testTiledMapMenu","\xf7","\xa6","\x3b","\x31")},
 	{ hx::fsUnknown, 0, null()}
 };
 static hx::StaticInfo *sStaticStorageInfo = 0;
@@ -185,7 +179,7 @@ static hx::StaticInfo *sStaticStorageInfo = 0;
 
 static ::String sMemberFields[] = {
 	HX_HCSTRING("testFlxSpriteCharacter","\x84","\x33","\x73","\x20"),
-	HX_HCSTRING("tiledLevelTiledMap","\x14","\xa9","\x32","\x39"),
+	HX_HCSTRING("testTiledMapMenu","\xf7","\xa6","\x3b","\x31"),
 	HX_HCSTRING("create","\xfc","\x66","\x0f","\x7c"),
 	HX_HCSTRING("update","\x09","\x86","\x05","\x87"),
 	::String(null()) };
